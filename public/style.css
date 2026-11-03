@@ -31,6 +31,8 @@ dl.facts dd { margin: 0; }
 .path li { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 15px; }
 .path li:first-child { border-color: var(--ink); font-weight: 600; }
 .fix { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+.fix > * { min-width: 0; }
+.fix select, .fix input[type=date] { width: 100%; }
 .fix label { font-size: 14px; color: var(--soft); display: flex; flex-direction: column; gap: 4px; }
 .fix select, .fix input[type=date] { font-size: 16px; padding: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); min-height: 44px; }
 .fix .check { flex-direction: row; align-items: center; gap: 8px; }
@@ -45,4 +47,4 @@ pre.letter { white-space: pre-wrap; font: 14px/1.5 var(--mono); background: var(
 .foot { color: var(--soft); font-size: 14px; margin-top: 30px; }
 .foot a { color: var(--soft); }
 .priv { font-size: 15px; color: var(--ok); margin: 8px 0 0; }
-@media (max-width: 520px) { .fix { grid-template-columns: 1fr; } dl.facts { grid-template-columns: 1fr; gap: 0 0; } dl.facts dd { margin-bottom: 8px; } }
+@media (max-width: 520px) { h1 { font-size: 29px; } .lede { font-size: 16px; margin-bottom: 12px; } textarea { min-height: 130px; } .deadline { margin-top: 4px; } .chip { padding: 6px 12px; min-height: 36px; font-size: 14px; } .fix { grid-template-columns: 1fr; } dl.facts { grid-template-columns: 1fr; gap: 0 0; } dl.facts dd { margin-bottom: 8px; } }

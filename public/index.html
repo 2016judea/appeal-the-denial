@@ -19,7 +19,8 @@
     <button class="chip" data-ex="medicaid_mco_drug" aria-pressed="false">Medicaid</button>
     <button class="chip" data-ex="marketplace_oon" aria-pressed="false">Marketplace</button>
   </div>
-  <label for="letter" class="label">Your letter (a sample is loaded; paste yours over it)</label>
+  <section id="top" aria-live="polite"></section>
+  <label for="letter" class="label">The letter (a sample; paste yours over it)</label>
   <textarea id="letter" spellcheck="false"></textarea>
   <div class="row">
     <button class="primary" id="go">Read my letter</button>
@@ -70,7 +71,7 @@ function opts(map, cur, blank) {
 
 function run() {
   const text = $("#letter").value;
-  if (text.trim().length < 20) { $("#out").innerHTML = ""; return; }
+  if (text.trim().length < 20) { $("#out").innerHTML = ""; $("#top").innerHTML = ""; return; }
   const r = analyze(text, overrides);
   const file = r.deadlines.find((d) => d.kind.startsWith("file_"));
   const others = r.deadlines.filter((d) => d !== file);
@@ -84,6 +85,7 @@ function run() {
       ${file.letter_says ? `<div class="cite">Your letter says ${esc(pretty(file.letter_says.date))}. The earlier date is shown.</div>` : ""}
       <div class="cite">Source: <a href="${file.rule.url}" target="_blank" rel="noopener">${esc(file.rule.cite)}</a></div></div>`;
   }
+  $("#top").innerHTML = h; h = "";
   if (r.problems.length) h += `<div class="problems">${r.problems.map(esc).join("<br>")}</div>`;
   h += `<div class="card"><span class="label">What they denied</span>
     <dl class="facts">
@@ -126,8 +128,8 @@ document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", ()
   document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
   loadExample(b.dataset.ex);
 }));
-$("#go").addEventListener("click", () => { run(); $("#out").scrollIntoView({ behavior: "smooth" }); window.va && window.va("event", { name: "read_letter" }); });
-$("#clear").addEventListener("click", () => { $("#letter").value = ""; overrides = {}; $("#out").innerHTML = ""; $("#letter").focus(); document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", "false")); });
+$("#go").addEventListener("click", () => { run(); $("#top").scrollIntoView({ behavior: "smooth" }); window.va && window.va("event", { name: "read_letter" }); });
+$("#clear").addEventListener("click", () => { $("#letter").value = ""; overrides = {}; $("#out").innerHTML = ""; $("#top").innerHTML = ""; $("#letter").focus(); document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", "false")); });
 $("#letter").addEventListener("input", () => { clearTimeout(window._t); window._t = setTimeout(run, 400); });
 $("#pay").addEventListener("click", (e) => {
   e.preventDefault();
