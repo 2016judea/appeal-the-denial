@@ -71,12 +71,7 @@ It shows a cream letter with an ink arrow pointing up, on the site's red (#b3261
 - All 6 prompts were run in both apps. The screenshots are listed above.
 
 ## Left for Aidan
-1. **OpenAI identity verification.** The headless browser reached platform.openai.com's login page. Picking his Google account landed on Google's chooser marked "Signed out", which is the passkey re-auth gate, so the settings page was never seen. His steps:
-   1. Sign in at platform.openai.com.
-   2. Select the organization that will publish.
-   3. Go to Settings → Organization → General (`platform.openai.com/settings/organization/general`).
-   4. Complete **individual verification** (publishes under his own name) or **business verification** (publishes as the LLC). Pick one, because the directory shows that name. Verification may take a couple of days.
-   5. Submit from the same org/project where he verified.
+1. ~~OpenAI identity verification.~~ **Done** (2026-11-03): individual and business both Approved on platform.openai.com. Submit from that same org.
 2. **ChatGPT domain check.** The submission form issues a token. Serve it as plain text at `https://appeal-the-denial.vercel.app/.well-known/openai-apps-challenge`. This is a code change once he has the token.
 3. **Submit for review**: ChatGPT at platform.openai.com/plugins; Claude at claude.ai/directory/manage. Nothing was submitted.
 4. Support URL for ChatGPT: the site or `aidan@brickandmortar.dev`.
