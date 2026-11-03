@@ -63,7 +63,12 @@ function buildServer() {
   server.registerTool("appeal_deadlines", {
     title: "Appeal deadlines",
     description: "Compute health insurance appeal deadlines when there is no letter text, only facts: plan type and the date on the denial. Returns each deadline with the regulation it comes from. " + RULES_FOR_HOST,
-    inputSchema: { ...overrides, plan_type: overrides.plan_type.unwrap(), letter_date: date.describe("Date printed on the denial") },
+    inputSchema: {
+      plan_type: overrides.plan_type.unwrap(), letter_date: date.describe("Date printed on the denial"),
+      received_date: overrides.received_date, stage: overrides.stage, urgent: overrides.urgent,
+      internal_appeal_level: overrides.internal_appeal_level, self_funded: overrides.self_funded,
+      grandfathered: overrides.grandfathered, two_level_appeals: overrides.two_level_appeals, part_b_drug: overrides.part_b_drug,
+    },
     annotations: { readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
   }, async (o) => {
     const r = analyze("", o);
