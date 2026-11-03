@@ -1,0 +1,30 @@
+Northstar Health Insurance Company
+PO Box 4410, Minneapolis, MN 55440
+
+Date of this notice: October 14, 2026
+
+Jordan Rivera
+1820 Elm Street
+St. Paul, MN 55104
+
+NOTICE OF ADVERSE BENEFIT DETERMINATION
+
+Member: Jordan Rivera
+Member ID: NSH448812907
+Group number: 70122
+Claim number: 26-0918-55412
+Provider: Lakeside Imaging Center
+Date of service: 09/18/2026
+Service: MRI of the lumbar spine without contrast (CPT 72148)
+Amount billed: $2,140.00
+Amount denied: $2,140.00
+
+We have denied payment for this claim.
+
+Reason for denial: The service is not medically necessary. Based on our clinical policy for advanced imaging of the spine, the records do not show six weeks of conservative treatment before imaging. Code CO-50.
+
+Your plan is a group health plan sponsored by your employer and is governed by the Employee Retirement Income Security Act (ERISA). Northstar is the claims administrator for your employer's self-funded plan.
+
+You have the right to appeal this decision within 180 days of receiving this notice. You may request, free of charge, copies of all documents relevant to your claim. After the internal appeal you may have the right to an external review and to bring a civil action under Section 502(a) of ERISA.
+
+Send your appeal to: Northstar Appeals, PO Box 4412, Minneapolis, MN 55440. Fax 1-800-555-0144.

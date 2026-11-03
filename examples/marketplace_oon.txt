@@ -1,0 +1,19 @@
+Prairie Shield Health Plans
+Individual and Family Plans sold through MNsure
+
+Letter date: September 30, 2026
+
+Member: Kim Nguyen
+Member ID: PSH-99012233
+Claim number: C9938120044
+
+Explanation of benefits: claim denied
+Provider: Twin Lakes Anesthesia Associates
+Date of service: 08/04/2026
+Service: anesthesia for outpatient knee surgery
+Amount billed: $1,860.00
+Your responsibility: $1,860.00
+
+Reason: The provider is out-of-network and your plan does not cover out-of-network services except for emergencies.
+
+You may file an appeal. If we uphold our decision you may request an external review.

@@ -1,0 +1,13 @@
+River Valley Health Plan
+A Medicaid managed care plan for Medical Assistance members
+
+Notice date: November 2, 2026
+
+Member: Andre Thompson
+Medicaid ID: 00384719
+Reference: RX-2210457
+
+We cannot approve the request for the drug Humira (adalimumab) 40 mg.
+Reason: This medication requires prior authorization and step therapy. Our records do not show that a preferred drug was tried first.
+
+You can appeal this decision with us. You have 60 days from the date of this notice to ask for an appeal. If we deny your appeal, you can ask for a state fair hearing.
