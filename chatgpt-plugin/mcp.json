@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "appeal-the-denial": {
+      "type": "streamable-http",
+      "url": "https://appeal-the-denial.vercel.app/mcp"
+    }
+  }
+}

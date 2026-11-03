@@ -1,0 +1,100 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "appeal-the-denial",
+  "version": "1.0.0",
+  "description": "Appeal the Denial reads a health insurance denial letter, explanation of benefits or adverse benefit determination that the person pastes in, and returns what was denied and the reason the insurer gave; which appeal rules apply (employer plan under ERISA, ACA Marketplace, Medicare Advantage, Medicaid managed care, Original Medicare, FEHB); the appeal deadline, computed in code from the federal regulation and cited to it; who decides next if the appeal fails; and a draft appeal letter. It never judges whether care was medically necessary and gives no medical advice: the clinical case comes from the person's own doctor, and the draft asks for that letter. Both tools are read-only. The letter is used only for the request and nothing is stored. No account is needed.",
+  "author": {
+    "name": "Brick and Mortar AI LLC",
+    "url": "https://appeal-the-denial.vercel.app/"
+  },
+  "homepage": "https://appeal-the-denial.vercel.app/",
+  "license": "MIT",
+  "keywords": [
+    "health insurance",
+    "claim denial",
+    "appeal",
+    "deadlines"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Appeal the Denial",
+        "shortDescription": "Appeal a health insurance denial",
+        "longDescription": "Appeal the Denial reads a health insurance denial letter, explanation of benefits or adverse benefit determination that the person pastes in, and returns what was denied and the reason the insurer gave; which appeal rules apply (employer plan under ERISA, ACA Marketplace, Medicare Advantage, Medicaid managed care, Original Medicare, FEHB); the appeal deadline, computed in code from the federal regulation and cited to it; who decides next if the appeal fails; and a draft appeal letter. It never judges whether care was medically necessary and gives no medical advice: the clinical case comes from the person's own doctor, and the draft asks for that letter. Both tools are read-only. The letter is used only for the request and nothing is stored. No account is needed.",
+        "developerName": "Brick and Mortar AI LLC",
+        "category": "Productivity",
+        "capabilities": [],
+        "websiteURL": "https://appeal-the-denial.vercel.app/",
+        "supportURL": "https://appeal-the-denial.vercel.app/",
+        "privacyPolicyURL": "https://appeal-the-denial.vercel.app/privacy.html",
+        "termsOfServiceURL": "https://appeal-the-denial.vercel.app/privacy.html",
+        "defaultPrompt": [
+          "My insurer denied my MRI. Here's the letter: when is my appeal due?",
+          "My Medicare Advantage plan denied a claim in a letter dated October 30, 2026. When's my appeal due?",
+          "My employer plan denied my final appeal on October 30, 2026. What now?"
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/composer-icon.png",
+        "composerIconDark": "./assets/composer-icon-dark.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Read an employer-plan (ERISA) denial letter and return the appeal deadline and a draft letter.",
+              "prompt": "Northstar Health Insurance Company\nPO Box 4410, Minneapolis, MN 55440\n\nDate of this notice: October 14, 2026\n\nJordan Rivera\n1820 Elm Street\nSt. Paul, MN 55104\n\nNOTICE OF ADVERSE BENEFIT DETERMINATION\n\nMember: Jordan Rivera\nMember ID: NSH448812907\nGroup number: 70122\nClaim number: 26-0918-55412\nProvider: Lakeside Imaging Center\nDate of service: 09/18/2026\nService: MRI of the lumbar spine without contrast (CPT 72148)\nAmount billed: $2,140.00\nAmount denied: $2,140.00\n\nWe have denied payment for this claim.\n\nReason for denial: The service is not medically necessary. Based on our clinical policy for advanced imaging of the spine, the records do not show six weeks of conservative treatment before imaging. Code CO-50.\n\nYour plan is a group health plan sponsored by your employer and is governed by the Employee Retirement Income Security Act (ERISA). Northstar is the claims administrator for your employer's self-funded plan.\n\nYou have the right to appeal this decision within 180 days of receiving this notice. You may request, free of charge, copies of all documents relevant to your claim. After the internal appeal you may have the right to an external review and to bring a civil action under Section 502(a) of ERISA.\n\nSend your appeal to: Northstar Appeals, PO Box 4412, Minneapolis, MN 55440. Fax 1-800-555-0144.\n\nWhat's my deadline and what do I send?",
+              "tools_triggered": "read_denial_letter",
+              "expected_behavior": "Identifies an ERISA employer plan; internal appeal due Mon, April 12, 2027, cited to 29 CFR 2560.503-1(h)(3)(i); returns a draft appeal letter that asks for the treating doctor's letter."
+            },
+            {
+              "description": "Read a Medicare Advantage denial and return the reconsideration deadline.",
+              "prompt": "Evergreen Medicare Advantage (HMO)\nNOTICE OF DENIAL OF MEDICAL COVERAGE\n\nDate: 10/22/2026\nMember name: Dolores Whitfield\nMember ID: EV-55120934\nRequest number: AUTH-7731902\n\nWe have denied the request for coverage for: 12 additional outpatient physical therapy visits.\nRequesting provider: Dr. Samuel Ortiz, Ortiz Orthopedics\n\nWhy we denied your request: The information provided does not meet our clinical criteria for continued therapy. Your progress notes show you have reached a plateau.\n\nYou have the right to ask Evergreen Medicare Advantage to review our decision by asking us for an appeal (a reconsideration). You must ask within 60 calendar days of the date of this notice. If you or your doctor believe waiting 30 days could seriously harm your health, ask for a fast (expedited) appeal.\n\nHelp me appeal this.",
+              "tools_triggered": "read_denial_letter",
+              "expected_behavior": "Identifies Medicare Advantage; reconsideration due Mon, December 21, 2026; notes the plan must forward an upheld denial to the Independent Review Entity."
+            },
+            {
+              "description": "Read a Medicaid managed-care drug denial.",
+              "prompt": "River Valley Health Plan\nA Medicaid managed care plan for Medical Assistance members\n\nNotice date: November 2, 2026\n\nMember: Andre Thompson\nMedicaid ID: 00384719\nReference: RX-2210457\n\nWe cannot approve the request for the drug Humira (adalimumab) 40 mg.\nReason: This medication requires prior authorization and step therapy. Our records do not show that a preferred drug was tried first.\n\nYou can appeal this decision with us. You have 60 days from the date of this notice to ask for an appeal. If we deny your appeal, you can ask for a state fair hearing.",
+              "tools_triggered": "read_denial_letter",
+              "expected_behavior": "Identifies Medicaid managed care; appeal due Fri, January 1, 2027, cited to 42 CFR 438.402(c)(2)(ii)."
+            },
+            {
+              "description": "Compute a deadline from a plan type and letter date without a letter.",
+              "prompt": "My Medicare Advantage plan denied a claim in a letter dated October 30, 2026. When's my appeal due?",
+              "tools_triggered": "appeal_deadlines",
+              "expected_behavior": "Returns Sun, January 3, 2027 (five days presumed receipt plus 60 days), cited to 42 CFR 422.582."
+            },
+            {
+              "description": "Return the external review deadline after a final internal denial on an employer plan.",
+              "prompt": "My employer plan denied my final appeal on October 30, 2026. What now?",
+              "tools_triggered": "appeal_deadlines",
+              "expected_behavior": "Returns an external review request due Mon, March 1, 2027, cited to 29 CFR 2590.715-2719(d)(2)(i)."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Do not judge medical necessity; the app gives no medical advice.",
+              "prompt": "Was my MRI medically necessary?"
+            },
+            {
+              "description": "Do not trigger for general health questions unrelated to an insurance denial.",
+              "prompt": "What are the side effects of ibuprofen?"
+            },
+            {
+              "description": "Do not trigger for a request to contact the insurer; the app sends nothing.",
+              "prompt": "Call my insurance company and file the appeal for me."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "No purchase or payment happens in ChatGPT. The tools return only the deadline, the appeal path and a draft letter."
+      },
+      "publication": {
+        "countries": [
+          "US"
+        ],
+        "release_notes": "1.0.0: first release."
+      }
+    }
+  }
+}
