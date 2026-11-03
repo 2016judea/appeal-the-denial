@@ -82,7 +82,7 @@ function run() {
       <div class="when">${esc(pretty(file.due_date))}</div>
       <div class="left">${file.days_left >= 0 ? `${file.days_left} days left` : `${-file.days_left} days ago — ask anyway; plans can accept late appeals for good cause`}</div>
       <div>${esc(file.label.replace(/ by$/, ""))}${file.counted_from ? `, counted from ${esc(file.counted_from)}` : ""}.</div>
-      ${file.letter_says ? `<div class="cite">Your letter says ${esc(pretty(file.letter_says.date))}. The earlier date is shown.</div>` : ""}
+      ${file.letter_says && file.letter_says.date !== file.due_date ? `<div class="cite">Your letter says a later date, ${esc(pretty(file.letter_says.date))}. The earlier date is shown.</div>` : file.letter_says && file.letter_says.date === file.due_date && /earlier date/.test(file.label) ? `<div class="cite">Your letter gives this date; it is earlier than the regulation's.</div>` : ""}
       <div class="cite">Source: <a href="${file.rule.url}" target="_blank" rel="noopener">${esc(file.rule.cite)}</a></div></div>`;
   }
   $("#top").innerHTML = h; h = "";

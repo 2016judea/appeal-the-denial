@@ -85,3 +85,16 @@ Packet (1, assembled from all of the above).
 ## Reality check (filled in after the model was written)
 
 See the bottom of this file once checked.
+
+### Checked 2026-11-03
+
+| entity | filled by | gap |
+|---|---|---|
+| Letter | the person's paste; `lib/extract.js` reads dates, IDs, insurer, amounts | `received_date` only from the person (rules count from receipt; we fall back to the letter date, which is never later) |
+| Denial | `extract.js` plain rules, 9 reason categories, CARC codes, the letter's own stated deadline | `urgent` is never inferred; the person or their doctor sets it |
+| Plan | keyword classifier with the words that set it shown; correctable on the page and through MCP overrides | `state` is set by the person (the first ZIP in a letter is usually the insurer's) |
+| Rule | `lib/rules.js`, 29 rules, each quoted verbatim from eCFR and pinned by `npm test` | state-specific windows (Medicaid fee-for-service, state external review) are shown as the federal floor/ceiling with "your notice gives the exact number" |
+| Deadline | `lib/engine.js` date arithmetic | none |
+| Packet | `lib/packet.js` | `tracking` ships as a calendar file the person keeps, not server reminders, so no health data is stored. `escalation` links to the NAIC directory of state regulators rather than carrying 50 addresses |
+
+Every field in the model is fillable. Nothing was dropped.
