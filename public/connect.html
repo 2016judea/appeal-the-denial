@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Use it in ChatGPT or Claude — Appeal the Denial</title>
+<link rel="stylesheet" href="/style.css">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script><script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <h1>Use it inside ChatGPT or Claude</h1>
+  <p class="lede">Add the connector, then paste or upload your denial in the chat.</p>
+  <div class="card"><span class="label">Server URL</span>
+    <pre class="letter" id="u">https://appeal-the-denial.vercel.app/mcp</pre>
+    <div class="row"><button class="secondary" id="c">Copy</button></div></div>
+  <div class="card"><h2>Claude</h2><p>Settings → Connectors → Add custom connector → paste the URL. No sign-in.</p></div>
+  <div class="card"><h2>ChatGPT</h2><p>Settings → Apps → Advanced settings → Developer mode → Create app → paste the URL, authentication: none.</p></div>
+  <div class="card"><h2>Then ask</h2><p>“Here's my denial letter. What's my deadline and what do I send?”</p></div>
+  <p class="foot">Free. Read-only. Keeps nothing. <a href="/">Back</a> · <a href="/privacy.html">Privacy</a></p>
+</main>
+<script>
+document.getElementById("c").addEventListener("click", async () => { try { await navigator.clipboard.writeText(document.getElementById("u").textContent.trim()); document.getElementById("c").textContent = "Copied"; } catch {} });
+</script>
+</body>
+</html>

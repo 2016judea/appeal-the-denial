@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Appeal the Denial</title>
+<meta name="description" content="Paste your health insurance denial. Get the appeal letter and the deadlines, each one tied to the regulation it comes from.">
+<link rel="stylesheet" href="/style.css">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script><script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <h1>Paste your denial.<br>Get the appeal and the deadlines.</h1>
+  <p class="lede">Health insurance said no. Here's how long you have, who decides next, and a letter to send.</p>
+
+  <div class="chips" role="group" aria-label="Try a sample letter">
+    <button class="chip" data-ex="erisa_mri" aria-pressed="true">Employer plan</button>
+    <button class="chip" data-ex="medicare_advantage_pt" aria-pressed="false">Medicare Advantage</button>
+    <button class="chip" data-ex="medicaid_mco_drug" aria-pressed="false">Medicaid</button>
+    <button class="chip" data-ex="marketplace_oon" aria-pressed="false">Marketplace</button>
+  </div>
+  <label for="letter" class="label">Your letter (a sample is loaded; paste yours over it)</label>
+  <textarea id="letter" spellcheck="false"></textarea>
+  <div class="row">
+    <button class="primary" id="go">Read my letter</button>
+    <button class="secondary" id="clear">Clear and paste mine</button>
+  </div>
+  <p class="priv">Your letter is read on this device. It is never sent to us or stored.</p>
+
+  <section id="out" aria-live="polite"></section>
+
+  <section class="card buy" id="buy">
+    <span class="label">If you want it done</span>
+    <h2>The full appeal packet</h2>
+    <div class="price">$29</div>
+    <ul>
+      <li>Your appeal letter, finished</li>
+      <li>A request for your claim file and the plan's own rules</li>
+      <li>A letter for your doctor to fill in</li>
+      <li>What to attach, for your denial reason</li>
+      <li>Calendar reminders before every deadline</li>
+      <li>The external review and complaint letters, if the appeal fails</li>
+    </ul>
+    <a class="primary" id="pay" href="#">Get the packet</a>
+    <p class="cite">Your letter stays on this device until you open the packet; it's used once to build it and not kept.</p>
+  </section>
+
+  <p class="foot">This organises your letter and the rules and drafts the paperwork. It doesn't judge whether your care was medically necessary; that argument comes from your doctor. Not legal advice. Every deadline cites the federal regulation it comes from; the letter's own date wins if it is earlier.
+  · <a href="/privacy.html">Privacy</a> · <a href="/connect.html">Use it inside ChatGPT or Claude</a></p>
+</main>
+
+<script type="module">
+import { analyze } from "/lib/engine.js";
+import { PLAN_TYPES, STAGES } from "/lib/rules.js";
+import { pretty } from "/lib/dates.js";
+
+const PAY_URL = "https://buy.stripe.com/4gM5kC9hcaOlfwGak10Jq3K";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let overrides = {};
+
+async function loadExample(name) {
+  const t = await (await fetch(`/examples/${name}.txt`)).text();
+  $("#letter").value = t; overrides = {}; run();
+}
+
+function opts(map, cur, blank) {
+  return (blank ? `<option value="">${blank}</option>` : "") + Object.entries(map).map(([k, v]) => `<option value="${k}" ${k === cur ? "selected" : ""}>${esc(v)}</option>`).join("");
+}
+
+function run() {
+  const text = $("#letter").value;
+  if (text.trim().length < 20) { $("#out").innerHTML = ""; return; }
+  const r = analyze(text, overrides);
+  const file = r.deadlines.find((d) => d.kind.startsWith("file_"));
+  const others = r.deadlines.filter((d) => d !== file);
+  const f = r.fields;
+  let h = "";
+  if (file) {
+    h += `<div class="card deadline"><span class="label">Your deadline</span>
+      <div class="when">${esc(pretty(file.due_date))}</div>
+      <div class="left">${file.days_left >= 0 ? `${file.days_left} days left` : `${-file.days_left} days ago — ask anyway; plans can accept late appeals for good cause`}</div>
+      <div>${esc(file.label.replace(/ by$/, ""))}${file.counted_from ? `, counted from ${esc(file.counted_from)}` : ""}.</div>
+      ${file.letter_says ? `<div class="cite">Your letter says ${esc(pretty(file.letter_says.date))}. The earlier date is shown.</div>` : ""}
+      <div class="cite">Source: <a href="${file.rule.url}" target="_blank" rel="noopener">${esc(file.rule.cite)}</a></div></div>`;
+  }
+  if (r.problems.length) h += `<div class="problems">${r.problems.map(esc).join("<br>")}</div>`;
+  h += `<div class="card"><span class="label">What they denied</span>
+    <dl class="facts">
+      <dt>Denied</dt><dd>${esc(r.summary.service_denied || "Not found — check the letter")}</dd>
+      <dt>Their reason</dt><dd>${esc(r.summary.reason_label)}${r.summary.reason_codes.length ? ` · ${esc(r.summary.reason_codes.join(", "))}` : ""}</dd>
+      ${r.summary.amount_denied ? `<dt>Amount</dt><dd>$${r.summary.amount_denied.toLocaleString()}</dd>` : ""}
+      <dt>Plan</dt><dd>${esc(r.plan.label)}${r.plan.evidence ? `<div class="cite">From: “${esc(r.plan.evidence)}”</div>` : ""}</dd>
+    </dl>
+    <div class="fix">
+      <label>Plan type <select id="o_plan">${opts(PLAN_TYPES, r.plan.plan_type, "Not sure")}</select></label>
+      <label>When <select id="o_stage">${opts(STAGES, f.stage)}</select></label>
+      <label>Letter date <input type="date" id="o_ld" value="${esc(f.letter_date || "")}"></label>
+      <label>Day you got it (optional) <input type="date" id="o_rd" value="${esc(f.received_date || "")}"></label>
+      <label class="check"><input type="checkbox" id="o_urgent" ${f.urgent ? "checked" : ""}> Waiting could seriously harm my health</label>
+      <label class="check"><input type="checkbox" id="o_final" ${f.internal_appeal_level === "final" ? "checked" : ""}> This letter denies my appeal</label>
+    </div></div>`;
+  h += `<div class="card"><span class="label">Next step</span><p style="margin:6px 0 0">${esc(r.next_step)}</p>
+    ${r.path.length ? `<ol class="path">${r.path.map((p) => `<li>${esc(p)}</li>`).join("")}</ol>` : ""}
+    ${others.length ? `<ul class="notes">${others.map((d) => `<li>${esc(d.label)} <b>${esc(pretty(d.due_date))}</b> <span class="cite">(<a href="${d.rule.url}" target="_blank" rel="noopener">${esc(d.rule.cite)}</a>)</span></li>`).join("")}</ul>` : ""}
+    ${r.notes.length ? `<ul class="notes">${r.notes.map((n) => `<li>${esc(n.text)} <span class="cite">(<a href="${n.rule.url}" target="_blank" rel="noopener">${esc(n.rule.cite)}</a>)</span></li>`).join("")}</ul>` : ""}</div>`;
+  h += `<div class="card"><span class="label">Your draft ${esc(r.appeal_name)} letter</span>
+    <pre class="letter" id="draft">${esc(r.appeal_letter)}</pre>
+    <div class="row"><button class="secondary" id="copy">Copy letter</button></div></div>`;
+  $("#out").innerHTML = h;
+
+  const bind = (id, key, fn) => $(id).addEventListener("change", (e) => { overrides[key] = fn(e.target); run(); });
+  bind("#o_plan", "plan_type", (t) => t.value || undefined);
+  bind("#o_stage", "stage", (t) => t.value);
+  bind("#o_ld", "letter_date", (t) => t.value || undefined);
+  bind("#o_rd", "received_date", (t) => t.value || undefined);
+  bind("#o_urgent", "urgent", (t) => t.checked);
+  bind("#o_final", "internal_appeal_level", (t) => (t.checked ? "final" : "initial"));
+  $("#copy").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(r.appeal_letter); $("#copy").textContent = "Copied"; } catch { $("#copy").textContent = "Select the letter and copy"; }
+    window.va && window.va("event", { name: "copy_letter" });
+  });
+}
+
+document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
+  document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
+  loadExample(b.dataset.ex);
+}));
+$("#go").addEventListener("click", () => { run(); $("#out").scrollIntoView({ behavior: "smooth" }); window.va && window.va("event", { name: "read_letter" }); });
+$("#clear").addEventListener("click", () => { $("#letter").value = ""; overrides = {}; $("#out").innerHTML = ""; $("#letter").focus(); document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", "false")); });
+$("#letter").addEventListener("input", () => { clearTimeout(window._t); window._t = setTimeout(run, 400); });
+$("#pay").addEventListener("click", (e) => {
+  e.preventDefault();
+  try { sessionStorage.setItem("atd_letter", $("#letter").value); sessionStorage.setItem("atd_over", JSON.stringify(overrides)); } catch {}
+  window.va && window.va("event", { name: "checkout_click" });
+  location.href = PAY_URL;
+});
+loadExample("erisa_mri");
+</script>
+</body>
+</html>

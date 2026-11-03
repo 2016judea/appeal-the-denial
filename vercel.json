@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node scripts/build.mjs",
+  "outputDirectory": "public",
+  "rewrites": [{ "source": "/mcp", "destination": "/api/mcp" }],
+  "headers": [{ "source": "/api/(.*)", "headers": [{ "key": "cache-control", "value": "no-store" }] }]
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your appeal packet — Appeal the Denial</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/style.css">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script><script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<main class="wrap">
+  <h1>Your appeal packet</h1>
+  <p class="lede" id="status">Building it from your letter…</p>
+  <div id="paste" hidden>
+    <label for="letter" class="label">Paste your denial letter again (it isn't kept between visits)</label>
+    <textarea id="letter"></textarea>
+    <div class="row"><button class="primary" id="build">Build my packet</button></div>
+  </div>
+  <section id="out"></section>
+  <p class="foot">Keep this page's link: it rebuilds your packet whenever you paste the letter. Questions: aidan@brickandmortar.dev · <a href="/">Back</a> · <a href="/privacy.html">Privacy</a></p>
+</main>
+<script type="module">
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const sid = new URLSearchParams(location.search).get("session_id");
+const fmt = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("en-US", { timeZone: "UTC", weekday: "short", month: "long", day: "numeric", year: "numeric" });
+
+function doc(title, text, id) {
+  return `<div class="card"><span class="label">${esc(title)}</span><pre class="letter" id="${id}">${esc(text)}</pre>
+    <div class="row"><button class="secondary" data-copy="${id}">Copy</button></div></div>`;
+}
+
+async function build(letter, overrides) {
+  $("#status").textContent = "Building it from your letter…";
+  const r = await fetch("/api/packet", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ session_id: sid, letter_text: letter, overrides }) });
+  const p = await r.json();
+  if (!r.ok) { $("#status").textContent = p.error || "Something went wrong."; if (r.status === 400) $("#paste").hidden = false; return; }
+  $("#paste").hidden = true;
+  $("#status").textContent = "Send the appeal first. Then the claim file request. Give your doctor their letter today.";
+  let h = `<div class="card deadline"><span class="label">Deadlines</span><ul class="notes">${p.deadlines.map((d) => `<li>${esc(d.label)} <b>${esc(fmt(d.due_date))}</b> <span class="cite">(<a href="${d.rule.url}" target="_blank" rel="noopener">${esc(d.rule.cite)}</a>)</span></li>`).join("")}</ul>
+    <div class="row"><button class="primary" id="ics">Add reminders to my calendar</button></div>
+    <p class="cite">A calendar file with alerts two weeks and three days before each deadline. It goes on your calendar, not our server.</p></div>`;
+  h += doc("1 · Appeal letter — send this", p.appeal_letter, "d1");
+  h += doc("2 · Claim file request — send with it or right after", p.claim_file_request, "d2");
+  h += doc("3 · For your doctor — ask them to complete it", p.lmn_request, "d3");
+  h += doc("4 · What to attach", p.evidence_checklist, "d4");
+  h += `<div class="card"><span class="label">5 · If they say no again</span><ul class="notes">${p.escalation.steps.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>`;
+  let n = 6;
+  for (const [k, v] of Object.entries(p.escalation.letters)) h += doc(`${n++} · ${k.replace(/_/g, " ")}`, v, `e${n}`);
+  h += `<p class="cite">${esc(p.not_medical_advice)}</p>`;
+  $("#out").innerHTML = h;
+  document.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent); b.textContent = "Copied"; } catch { b.textContent = "Select and copy"; }
+  }));
+  $("#ics").addEventListener("click", () => {
+    const url = URL.createObjectURL(new Blob([p.calendar_ics], { type: "text/calendar" }));
+    const a = Object.assign(document.createElement("a"), { href: url, download: "appeal-deadlines.ics" });
+    document.body.appendChild(a); a.click(); a.remove();
+    window.va && window.va("event", { name: "ics_download" });
+  });
+  try { sessionStorage.removeItem("atd_letter"); } catch {}
+}
+
+if (!sid) { $("#status").innerHTML = 'This page opens after checkout. <a href="/">Start here</a>.'; }
+else {
+  let letter = "", over = {};
+  try { letter = sessionStorage.getItem("atd_letter") || ""; over = JSON.parse(sessionStorage.getItem("atd_over") || "{}"); } catch {}
+  if (letter.trim().length >= 20) build(letter, over);
+  else { $("#status").textContent = "Payment found. Paste your letter to build the packet."; $("#paste").hidden = false; }
+  $("#build").addEventListener("click", () => build($("#letter").value, {}));
+}
+</script>
+</body>
+</html>
