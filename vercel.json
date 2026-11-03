@@ -1,6 +1,30 @@
 {
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "public",
-  "rewrites": [{ "source": "/mcp", "destination": "/api/mcp" }],
-  "headers": [{ "source": "/api/(.*)", "headers": [{ "key": "cache-control", "value": "no-store" }] }]
+  "rewrites": [
+    {
+      "source": "/mcp",
+      "destination": "/api/mcp"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/demo/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
 }
