@@ -43,10 +43,40 @@ Claude: Legal / Health. ChatGPT: Lifestyle or Productivity (health-adjacent; no 
 6. Negative: "Was my MRI medically necessary?" → the model should decline to judge and point to the doctor's letter.
 
 ## Screenshots
-`submission/web-phone.png`, `submission/web-desktop.png`. In-chat screenshots need a
-ChatGPT developer-mode app and a Claude custom connector added by Aidan (logged-in UI).
+Web: `submission/web-phone.png`, `submission/web-desktop.png`.
 
-## Left before submitting
-1. Add the connector in Claude (Settings → Connectors → custom) and in ChatGPT developer mode; run the 6 prompts; screenshot the chats.
-2. ChatGPT app submission needs a verified OpenAI developer identity and a support URL — both on Aidan's account.
-3. Square 512px icon (none made yet).
+In-chat, run 2026-11-03 on Aidan's own accounts (Claude: Opus 5.5 with the custom connector;
+ChatGPT: developer-mode plugin, invoked with `@Appeal the Denial`). `N.png` is the top of the
+answer, `N-end.png` the bottom.
+
+| # | Claude | ChatGPT | Result |
+|---|--------|---------|--------|
+| 1 | `screenshots/claude-1.png` | `screenshots/chatgpt-1.png` | both: Mon, April 12, 2027, 29 CFR 2560.503-1(h)(3)(i), draft letter |
+| 2 | `screenshots/claude-2.png` | `screenshots/chatgpt-2.png` | both: Mon, December 21, 2026, auto-forward to IRE |
+| 3 | `screenshots/claude-3.png` | `screenshots/chatgpt-3.png` | both: Fri, January 1, 2027, 42 CFR 438.402(c)(2)(ii) |
+| 4 | `screenshots/claude-4.png` | `screenshots/chatgpt-4.png` | both: Sun, January 3, 2027 |
+| 5 | `screenshots/claude-5.png` | `screenshots/chatgpt-5.png` | both: Mon, March 1, 2027, 29 CFR 2590.715-2719(d)(2)(i) |
+| 6 | `screenshots/claude-6.png` | `screenshots/chatgpt-6.png` | no tool call in either. Claude declines to judge and points to the doctor's letter. ChatGPT opens "Possibly." and offers to "determine whether the insurer's reasoning is defensible", though it still says the treating physician makes the clinical case. That is softer than the policy note claims |
+
+No server errors on any prompt.
+
+## Icon
+`submission/icon/icon.svg`, `icon-512.png`, `icon-1024.png` (plus `icon-64.png`, the legibility check).
+It shows a cream letter with an ink arrow pointing up, on the site's red (#b3261e). There are no brand marks.
+`icon-512.png` is 4.9 KB, which fits ChatGPT's 10 KB PNG limit. It is already the icon on the ChatGPT dev plugin.
+
+## Done 2026-11-03
+- Claude: custom connector "Appeal the Denial" added (no sign-in), both tools set to Always allow.
+- ChatGPT: custom MCP server added as a dev-mode plugin (`asdk_app_6aea6c45e4288191be944ca97e43de29`, no auth, review status DEVELOPMENT) and connected.
+- All 6 prompts were run in both apps. The screenshots are listed above.
+
+## Left for Aidan
+1. **OpenAI identity verification.** The headless browser reached platform.openai.com's login page. Picking his Google account landed on Google's chooser marked "Signed out", which is the passkey re-auth gate, so the settings page was never seen. His steps:
+   1. Sign in at platform.openai.com.
+   2. Select the organization that will publish.
+   3. Go to Settings → Organization → General (`platform.openai.com/settings/organization/general`).
+   4. Complete **individual verification** (publishes under his own name) or **business verification** (publishes as the LLC). Pick one, because the directory shows that name. Verification may take a couple of days.
+   5. Submit from the same org/project where he verified.
+2. **ChatGPT domain check.** The submission form issues a token. Serve it as plain text at `https://appeal-the-denial.vercel.app/.well-known/openai-apps-challenge`. This is a code change once he has the token.
+3. **Submit for review**: ChatGPT at platform.openai.com/plugins; Claude at claude.ai/directory/manage. Nothing was submitted.
+4. Support URL for ChatGPT: the site or `aidan@brickandmortar.dev`.

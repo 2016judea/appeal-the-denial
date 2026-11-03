@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Appeal the Denial</title>
+  <rect width="1024" height="1024" fill="#b3261e"/>
+  <!-- the letter: cream sheet with a folded corner -->
+  <path d="M272 176 H632 L792 336 V808 Q792 848 752 848 H272 Q232 848 232 808 V216 Q232 176 272 176 Z" fill="#f6f2ea"/>
+  <path d="M632 176 V296 Q632 336 672 336 H792 Z" fill="#e3dccf"/>
+  <!-- the appeal: an ink arrow going up -->
+  <path d="M512 352 L676 540 H572 V744 H452 V540 H348 Z" fill="#1d1b18"/>
+</svg>
