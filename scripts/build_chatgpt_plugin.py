@@ -5,7 +5,7 @@ import json, shutil, zipfile
 from pathlib import Path
 from PIL import Image
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "chatgpt-plugin"
 ASSETS = OUT / "assets"
@@ -37,7 +37,7 @@ plugin = {
   "extensions": {"com.openai": {
     "interface": {
       "displayName": "Appeal the Denial",
-      "shortDescription": "Appeal a health insurance denial",
+      "shortDescription": "Appeal an insurance denial",
       "longDescription": DESC,
       "developerName": "Brick and Mortar AI LLC",
       "category": "Productivity",
@@ -59,15 +59,15 @@ plugin = {
       "test_cases": {
         "positive": [
           {"description": "Read an employer-plan (ERISA) denial letter and return the appeal deadline and a draft letter.",
-           "prompt": open(ROOT/"public/examples/erisa_mri.txt").read().strip() + "\n\nWhat's my deadline and what do I send?",
+           "prompt": open(ROOT/"examples/erisa_mri.txt").read().strip() + "\n\nWhat's my deadline and what do I send?",
            "tools_triggered": "read_denial_letter",
            "expected_behavior": "Identifies an ERISA employer plan; internal appeal due Mon, April 12, 2027, cited to 29 CFR 2560.503-1(h)(3)(i); returns a draft appeal letter that asks for the treating doctor's letter."},
           {"description": "Read a Medicare Advantage denial and return the reconsideration deadline.",
-           "prompt": open(ROOT/"public/examples/medicare_advantage_pt.txt").read().strip() + "\n\nHelp me appeal this.",
+           "prompt": open(ROOT/"examples/medicare_advantage_pt.txt").read().strip() + "\n\nHelp me appeal this.",
            "tools_triggered": "read_denial_letter",
            "expected_behavior": "Identifies Medicare Advantage; reconsideration due Mon, December 21, 2026; notes the plan must forward an upheld denial to the Independent Review Entity."},
           {"description": "Read a Medicaid managed-care drug denial.",
-           "prompt": open(ROOT/"public/examples/medicaid_mco_drug.txt").read().strip(),
+           "prompt": open(ROOT/"examples/medicaid_mco_drug.txt").read().strip(),
            "tools_triggered": "read_denial_letter",
            "expected_behavior": "Identifies Medicaid managed care; appeal due Fri, January 1, 2027, cited to 42 CFR 438.402(c)(2)(ii)."},
           {"description": "Compute a deadline from a plan type and letter date without a letter.",
@@ -91,7 +91,7 @@ plugin = {
       "commerce": False,
       "commerce_description": "No purchase or payment happens in ChatGPT. The tools return only the deadline, the appeal path and a draft letter."
     },
-    "publication": {"countries": ["US"], "release_notes": "1.0.0: first release."}
+    "publication": {"countries": ["US"], "release_notes": "1.0.1: first release."}
   }}
 }
 mcp = {"$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",

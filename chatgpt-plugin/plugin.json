@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "appeal-the-denial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Appeal the Denial reads a health insurance denial letter, explanation of benefits or adverse benefit determination that the person pastes in, and returns what was denied and the reason the insurer gave; which appeal rules apply (employer plan under ERISA, ACA Marketplace, Medicare Advantage, Medicaid managed care, Original Medicare, FEHB); the appeal deadline, computed in code from the federal regulation and cited to it; who decides next if the appeal fails; and a draft appeal letter. It never judges whether care was medically necessary and gives no medical advice: the clinical case comes from the person's own doctor, and the draft asks for that letter. Both tools are read-only. The letter is used only for the request and nothing is stored. No account is needed.",
   "author": {
     "name": "Brick and Mortar AI LLC",
@@ -19,7 +19,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Appeal the Denial",
-        "shortDescription": "Appeal a health insurance denial",
+        "shortDescription": "Appeal an insurance denial",
         "longDescription": "Appeal the Denial reads a health insurance denial letter, explanation of benefits or adverse benefit determination that the person pastes in, and returns what was denied and the reason the insurer gave; which appeal rules apply (employer plan under ERISA, ACA Marketplace, Medicare Advantage, Medicaid managed care, Original Medicare, FEHB); the appeal deadline, computed in code from the federal regulation and cited to it; who decides next if the appeal fails; and a draft appeal letter. It never judges whether care was medically necessary and gives no medical advice: the clinical case comes from the person's own doctor, and the draft asks for that letter. Both tools are read-only. The letter is used only for the request and nothing is stored. No account is needed.",
         "developerName": "Brick and Mortar AI LLC",
         "category": "Productivity",
@@ -93,7 +93,7 @@
         "countries": [
           "US"
         ],
-        "release_notes": "1.0.0: first release."
+        "release_notes": "1.0.1: first release."
       }
     }
   }
