@@ -53,7 +53,7 @@ function buildServer() {
     title: "Read a denial letter",
     description: "Use when someone pastes or uploads a health insurance denial, EOB or adverse benefit determination. Pass the letter text verbatim. Returns what was denied, the reason category, the plan type (employer/ERISA, Marketplace, Medicare Advantage, Medicaid), the appeal deadline computed from the regulation, the next step and a draft appeal letter. Use the optional fields only to correct something the person told you. " + RULES_FOR_HOST,
     inputSchema: { letter_text: z.string().min(20).describe("The full text of the denial letter, verbatim"), ...overrides },
-    annotations: { readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+    annotations: { title: "Read a denial letter", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
   }, async ({ letter_text, ...o }) => {
     const r = analyze(letter_text, o);
     const { fields, ...rest } = r;
@@ -69,7 +69,7 @@ function buildServer() {
       internal_appeal_level: overrides.internal_appeal_level, self_funded: overrides.self_funded,
       grandfathered: overrides.grandfathered, two_level_appeals: overrides.two_level_appeals, part_b_drug: overrides.part_b_drug,
     },
-    annotations: { readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+    annotations: { title: "Appeal deadlines", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
   }, async (o) => {
     const r = analyze("", o);
     const lines = r.deadlines.map((d) => `- ${d.label} ${pretty(d.due_date)} — ${d.rule.cite} (${d.rule.url})`);
