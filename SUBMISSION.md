@@ -70,8 +70,7 @@ It shows a cream letter with an ink arrow pointing up, on the site's red (#b3261
 - ChatGPT: custom MCP server added as a dev-mode plugin (`asdk_app_6aea6c45e4288191be944ca97e43de29`, no auth, review status DEVELOPMENT) and connected.
 - All 6 prompts were run in both apps. The screenshots are listed above.
 
-## Left for Aidan
-1. ~~OpenAI identity verification.~~ **Done** (2026-11-03): individual and business both Approved on platform.openai.com. Submit from that same org.
-2. **ChatGPT domain check.** The submission form issues a token. Serve it as plain text at `https://appeal-the-denial.vercel.app/.well-known/openai-apps-challenge`. This is a code change once he has the token.
-3. **Submit for review**: ChatGPT at platform.openai.com/plugins; Claude at claude.ai/directory/manage. Nothing was submitted.
-4. Support URL for ChatGPT: the site or `aidan@brickandmortar.dev`.
+## Submitted 2026-11-03
+- **ChatGPT:** plugin ZIP 1.0.1 (`scripts/build_chatgpt_plugin.py` → `chatgpt-plugin.zip`) uploaded at platform.openai.com/plugins under **Business — Brick and Mortar AI LLC**; domain verified (token in `public/.well-known/openai-apps-challenge`); demo video `public/demo/chatgpt-review.mp4` (8 test prompts, noindex). Status: **1.0.1 · In review**. Remaining scan findings were the generic "new tool needs review" only.
+- **Claude:** MCP connector submitted at claude.ai/directory/manage, slug `appeal-the-denial`, categories Consumer Health + Legal, personal health data = Yes (processed, not stored). Status: **submitted for review**; Anthropic replies to aidan@brickandmortar.dev.
+- Server changes made during submission: annotation titles; `appeal_deadlines` takes no names or member/claim IDs (OpenAI scan flag); tool descriptions describe rather than instruct (Claude attestation). The OpenAI stored tool snapshot predates the description change; if review flags a mismatch, Rescan + upload a new version.
