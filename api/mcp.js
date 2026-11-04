@@ -51,7 +51,7 @@ function buildServer() {
 
   server.registerTool("read_denial_letter", {
     title: "Read a denial letter",
-    description: "Use when someone pastes or uploads a health insurance denial, EOB or adverse benefit determination. Pass the letter text verbatim. Returns what was denied, the reason category, the plan type (employer/ERISA, Marketplace, Medicare Advantage, Medicaid), the appeal deadline computed from the regulation, the next step and a draft appeal letter. Use the optional fields only to correct something the person told you. " + RULES_FOR_HOST,
+    description: "Use when someone pastes or uploads a health insurance denial, EOB or adverse benefit determination. Pass the letter text verbatim. Returns what was denied, the reason category, the plan type (employer/ERISA, Marketplace, Medicare Advantage, Medicaid), the appeal deadline computed from the regulation, the next step and a draft appeal letter. The optional fields correct something the person stated. Deadlines are computed in code from the cited regulation. The tool does not assess medical necessity.",
     inputSchema: { letter_text: z.string().min(20).describe("The full text of the denial letter, verbatim"), ...overrides },
     annotations: { title: "Read a denial letter", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
   }, async ({ letter_text, ...o }) => {
@@ -62,7 +62,7 @@ function buildServer() {
 
   server.registerTool("appeal_deadlines", {
     title: "Appeal deadlines",
-    description: "Compute health insurance appeal deadlines when there is no letter text, only facts: plan type and the date on the denial. Returns each deadline with the regulation it comes from. " + RULES_FOR_HOST,
+    description: "Compute health insurance appeal deadlines when there is no letter text, only facts: plan type and the date on the denial. Returns each deadline with the regulation it comes from, computed in code. The tool does not assess medical necessity.",
     inputSchema: {
       plan_type: overrides.plan_type.unwrap(), letter_date: date.describe("Date printed on the denial"),
       received_date: overrides.received_date, stage: overrides.stage, urgent: overrides.urgent,
