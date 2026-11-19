@@ -90,3 +90,79 @@ It shows a cream letter with an ink arrow pointing up, on the site's red (#b3261
   description change, not this one), open platform.openai.com/plugins → Appeal the Denial →
   **Rescan**, then `python3 scripts/build_chatgpt_plugin.py` and upload the new ZIP as 1.0.2.
   If either reviewer asks about data collection, point them at the privacy page.
+
+## Changes required 2026-11-19
+**Not resubmitted. OpenAI excludes this category, so the only change that could pass is a
+change to what the tool does, and that decision is Aidan's.**
+
+**Where the ask lives.** The portal (platform.openai.com/plugins/manage/plugin_asdk_app_6aea704faa8c819197412fcaf90fc317)
+shows only the banner *"The last review of your plugin found issues. Address the feedback and
+submit a new version."* Its MCP findings are the 11/03 scan's generic "needs further review". The
+reviewer's text arrived only by email: "ChatGPT Plugin Submission Rejected
+[asdk_app_6aea704faa8c819197412fcaf90fc317]", from openai-review@tm.openai.com to
+**aidanjude2016@gmail.com** (not the business inbox), Tue 17 Nov 2026 19:42 UTC. It was written in German.
+
+**Reviewer's request, verbatim:**
+> Vielen Dank für deine Einreichung. Nach der Prüfung haben wir festgestellt, dass dein Plugin
+> einem Anwendungsfall im Gesundheitswesen oder in der Medizin zuzuordnen ist, den das
+> Plugin-Ökosystem von ChatGPT derzeit nicht unterstützt.
+>
+> Wir wissen, wie wichtig diese Anwendungsfälle sind. Trotzdem sind Plugins, die
+> Gesundheitsdienstleistungen oder entsprechende Arbeitsabläufe unterstützen (etwa den Zugang zu
+> medizinischer Versorgung, die Vermittlung geeigneter Gesundheitsdienstleister oder
+> Aktivitäten, bei denen Gesundheitsinformationen eine Rolle spielen können), derzeit nicht für
+> die Bereitstellung durch Drittanbieter auf der Plattform vorgesehen. Diese Entscheidung beruht
+> auf dem aktuellen Entwicklungsstand der Plattform und bewertet nicht die Qualität deines Plugins.
+
+**In English:** your plugin falls under a healthcare or medical use case that ChatGPT's plugin
+ecosystem does not currently support. Plugins that support health services or related
+workflows are not currently open to third parties. The examples given are access to medical
+care, matching people with suitable providers, and *activities in which health information
+may play a role*. The decision reflects where the platform is now and does not judge the
+plugin's quality. The email adds: *"If you have questions or believe we have made an error in
+our review, reply directly to this email to initiate an appeal."*
+
+**What I changed: nothing.** No server change, no new ZIP, no resubmit. Any version that reads
+a denial letter handles health information, and that is the activity the email names.
+Resubmitting 1.0.1 or a 1.0.2 with the same tools would draw the same ruling.
+
+**Status read back from the portal, 2026-11-19 17:50 CST:** Review status **Changes required**,
+Publication **Not published**, Metadata & skills version **1.0.1 · Changes required**, MCPs tab
+**Needs attention**. Only one version exists. The Claude directory submission is separate and
+unaffected.
+
+**For Aidan, pick one:**
+1. **Accept it.** ChatGPT is closed to this tool for now. The Claude listing and the website
+   carry it.
+2. **Appeal.** Reply to the 11/17 email from aidanjude2016@gmail.com. A draft is below; I can't
+   send it, and the claude.ai Gmail connector is not linked, so it is not in his Gmail drafts.
+   Its last paragraph offers a deadlines-only build. Keep that paragraph only if he would ship
+   that build.
+3. **Reframe.** Split out a ChatGPT-only app with just `appeal_deadlines` (plan type and the
+   letter's date in, regulation-cited deadlines out, no letter text, no service, no reason).
+   Even that may still read as "access to medical care". It's a product call, not a fix.
+
+**Draft reply (option 2). Draft, not sent.**
+
+    Subject: Re: ChatGPT Plugin Submission Rejected [asdk_app_6aea704faa8c819197412fcaf90fc317]
+
+    Hello,
+
+    I'd like to appeal the decision on Appeal the Denial.
+
+    The plugin doesn't deliver care, find a provider or weigh in on treatment. It does insurance
+    paperwork. Someone pastes the denial letter their insurer sent, and it tells them which
+    appeal rules apply, when the appeal is due, and drafts the letter. The deadline is computed
+    in code from the federal claims rules (29 CFR 2560.503-1, 45 CFR 147.136, 42 CFR 422
+    subpart M) and cited to them. It's a legal-deadline calculator more than a health app.
+
+    It never judges whether care was medically necessary and gives no medical advice. The draft
+    asks for a letter from the person's own doctor. Both tools are read-only, and the letter is
+    used for the one request and never stored.
+
+    But the letter itself carries health information, and I understand if that's the line. If it
+    is, I can ship a version that takes only the plan type and the date on the denial, and
+    returns the deadlines.
+
+    Best,
+    Aidan
