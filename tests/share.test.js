@@ -19,6 +19,7 @@ test("the /appeal link reproduces the chat's deadlines and letter for every exam
     assert.deepEqual(b.notes, a.notes, f);
     assert.deepEqual(b.path, a.path, f);
     assert.ok(frag.length < 900, `${f}: fragment ${frag.length} chars`);
+    assert.ok(!/[()'*!\s]/.test(frag) && frag.endsWith("&end"), `${f}: link would break inside markdown or lose a trailing character`);
   }
 });
 
