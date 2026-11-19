@@ -74,3 +74,19 @@ It shows a cream letter with an ink arrow pointing up, on the site's red (#b3261
 - **ChatGPT:** plugin ZIP 1.0.1 (`scripts/build_chatgpt_plugin.py` → `chatgpt-plugin.zip`) uploaded at platform.openai.com/plugins under **Business — Brick and Mortar AI LLC**; domain verified (token in `public/.well-known/openai-apps-challenge`); demo video `public/demo/chatgpt-review.mp4` (8 test prompts, noindex). Status: **1.0.1 · In review**. Remaining scan findings were the generic "new tool needs review" only.
 - **Claude:** MCP connector submitted at claude.ai/directory/manage, slug `appeal-the-denial`, categories Consumer Health + Legal, personal health data = Yes (processed, not stored). Status: **submitted for review**; Anthropic replies to aidan@brickandmortar.dev.
 - Server changes made during submission: annotation titles; `appeal_deadlines` takes no names or member/claim IDs (OpenAI scan flag); tool descriptions describe rather than instruct (Claude attestation). The OpenAI stored tool snapshot predates the description change; if review flags a mismatch, Rescan + upload a new version.
+
+## Changed 2026-11-19 (both reviews still open)
+- **Unchanged:** tool names, descriptions, input schemas and annotations. That is what OpenAI's
+  stored tool snapshot covers, so today's change needs **no rescan and no new version**.
+- **Changed:** server version 1.1.0. Each result now ends with a link to the free page
+  `/appeal?src=mcp#…` (deadline, where to send it, the letter, a calendar file; nothing is sold
+  on it) and carries `open_url` in `structuredContent`; read_denial_letter adds a "Send it to"
+  line copied from the letter. Server instructions add: "Show the open link exactly as returned,
+  in full." The letter's facts ride in the URL fragment, which no server receives.
+- **Analytics added:** one anonymous `mcp_tool_call` event per call (tool, ok, duration, client,
+  plan type, reason category; no letter content). The privacy policy at the same URL says so,
+  updated 2026-11-19. "Personal health data: processed, not stored" is still true.
+- **For Aidan, only if a reviewer asks:** if OpenAI flags a tool mismatch (from the 11/03
+  description change, not this one), open platform.openai.com/plugins → Appeal the Denial →
+  **Rescan**, then `python3 scripts/build_chatgpt_plugin.py` and upload the new ZIP as 1.0.2.
+  If either reviewer asks about data collection, point them at the privacy page.

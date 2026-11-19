@@ -1,0 +1,8070 @@
+{
+ "title": "Health insurance denial rates by insurer, Marketplace plans on HealthCare.gov, 2025",
+ "data_year": 2025,
+ "built": "2026-11-19",
+ "source": {
+  "name": "Centers for Medicare & Medicaid Services, Transparency in Coverage Public Use File, plan year 2027 (2025 data); plan year 2026 file for 2024",
+  "page": "https://www.cms.gov/marketplace/resources/data/public-use-files",
+  "dictionary": "https://www.cms.gov/files/document/transparency-coverage-datadictionary-py27.pdf",
+  "files": {
+   "2025": {
+    "url": "https://download.cms.gov/marketplace-puf/2027/transparency-in-coverage-puf.zip",
+    "sha256": "72f64531e10f69e0c702a8812b78c8f603636f92128e9697672ad6bf0be84006",
+    "last_modified": "Fri, 30 Oct 2026 13:15:31 GMT",
+    "retrieved": "2026-11-19"
+   },
+   "2024": {
+    "url": "https://download.cms.gov/marketplace-puf/2026/transparency-in-coverage-puf.zip",
+    "sha256": "bcdc435e97bcd954d885a69e3332c28a414a4600dccb715e4d521b403a730193",
+    "last_modified": "Tue, 28 Oct 2025 19:24:13 GMT",
+    "retrieved": "2026-11-19"
+   }
+  },
+  "scope": "Individual Marketplace medical plans (QHPs) sold through HealthCare.gov: Federally-facilitated Exchanges, including states that do plan management, and state-based exchanges on the federal platform. Not employer plans, Medicare, Medicaid, or states that run their own exchange (for example California, New York, Minnesota).",
+  "reported_by": "Each insurer reports its own counts to CMS (45 CFR 156.220). CMS: 'Claims denials are not necessarily indicative of issuer strength or plan quality.'"
+ },
+ "method": "One row per insurer per state. Claims denied % = in-network claims denied / in-network claims received, both with dates of service in 2025. Prior authorization denied % = pre-service benefit requests denied / received in 2025 (first published in this file). Appeals won % = internal appeals of claims overturned / filed. Percentages computed by appeal-the-denial from CMS's counts, rounded to 0.1. ** = CMS suppressed a small count; N/A = insurer new to the Exchange, no 2025 data.",
+ "national": {
+  "insurers": 152,
+  "insurers_with_data": 135,
+  "states": 29,
+  "claims_in_network": {
+   "n": 533960787,
+   "k": 83907852,
+   "pct": 15.7
+  },
+  "prior_auth": {
+   "n": 12078851,
+   "k": 1250441,
+   "pct": 10.4
+  },
+  "internal_appeals_claims": {
+   "n": 241367,
+   "k": 64647,
+   "pct": 26.8
+  }
+ },
+ "rows": [
+  {
+   "state": "AL",
+   "state_name": "Alabama",
+   "state_slug": "alabama",
+   "insurer": "Blue Cross and Blue Shield of Alabama",
+   "insurer_id": "46944",
+   "slug": "blue-cross-and-blue-shield-of-alabama",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsal.org/web/public/portal/claims-payment-policy-other-information.html",
+   "claims_in_network": {
+    "n": 18712886,
+    "k": 3008219,
+    "pct": 16.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 539953,
+    "k": 493931,
+    "pct": 91.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 144819,
+    "k": 6556,
+    "pct": 4.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 365,
+    "k": 90,
+    "pct": 24.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 20,
+    "k": 12,
+    "pct": 60.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 13,
+    "k": 0,
+    "pct": 0.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 10704172,
+    "k": 2038603,
+    "pct": 19.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "AL",
+   "state_name": "Alabama",
+   "state_slug": "alabama",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "53932",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/al/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 4297407,
+    "k": 487433,
+    "pct": 11.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 668329,
+    "k": 130321,
+    "pct": 19.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 182906,
+    "k": 10850,
+    "pct": 5.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 990,
+    "k": 299,
+    "pct": 30.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 988,
+    "k": 298,
+    "pct": 30.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 19,
+    "k": 13,
+    "pct": 68.4,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1644320,
+    "k": 352236,
+    "pct": 21.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "AL",
+   "state_name": "Alabama",
+   "state_slug": "alabama",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "17091",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://hioscar.com/al_tic_2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "AL",
+   "state_name": "Alabama",
+   "state_slug": "alabama",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "69461",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 5388247,
+    "k": 1120917,
+    "pct": 20.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1135852,
+    "k": 633074,
+    "pct": 55.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 44488,
+    "k": 11658,
+    "pct": 26.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 344,
+    "k": 149,
+    "pct": 43.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 881,
+    "k": 184,
+    "pct": 20.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 6010107,
+    "k": 1073259,
+    "pct": 17.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "AK",
+   "state_name": "Alaska",
+   "state_slug": "alaska",
+   "insurer": "Moda Health Plan, Inc.",
+   "insurer_id": "73836",
+   "slug": "moda-health-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.modahealth.com/members/transparency.shtml?state=ak",
+   "claims_in_network": {
+    "n": 132295,
+    "k": 20076,
+    "pct": 15.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 19014,
+    "k": 2381,
+    "pct": 12.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2094,
+    "k": 282,
+    "pct": 13.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 28,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 168684,
+    "k": 29231,
+    "pct": 17.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "AK",
+   "state_name": "Alaska",
+   "state_slug": "alaska",
+   "insurer": "Premera Blue Cross Blue Shield of Alaska",
+   "insurer_id": "38344",
+   "slug": "premera-blue-cross-blue-shield-of-alaska",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.premera.com/visitor/transparency-coverage?r",
+   "claims_in_network": {
+    "n": 858526,
+    "k": 225470,
+    "pct": 26.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 35754,
+    "k": 14364,
+    "pct": 40.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 102790,
+    "k": 33064,
+    "pct": 32.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 178,
+    "k": 70,
+    "pct": 39.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 57,
+    "k": 22,
+    "pct": 38.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 777414,
+    "k": 210082,
+    "pct": 27.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "Antidote Health Plan of Arizona, Inc.",
+   "insurer_id": "68445",
+   "slug": "antidote-health-plan-of-arizona-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.antidotehealth.com/legal/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1466,
+    "k": 140,
+    "pct": 9.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1261,
+    "k": 299,
+    "pct": 23.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 85,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "Blue Cross and Blue Shield of Arizona, Inc.",
+   "insurer_id": "53901",
+   "slug": "blue-cross-and-blue-shield-of-arizona-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.azblue.com/individuals-and-families/resources/aca-plan-information",
+   "claims_in_network": {
+    "n": 802431,
+    "k": 116772,
+    "pct": 14.6,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 23295,
+    "k": 21168,
+    "pct": 90.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 7159,
+    "k": 462,
+    "pct": 6.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 6235,
+    "k": 3007,
+    "pct": 48.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 172,
+    "k": 43,
+    "pct": 25.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 229,
+    "k": 39,
+    "pct": 17.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1522332,
+    "k": 233016,
+    "pct": 15.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "Health Net of Arizona, Inc.",
+   "insurer_id": "91450",
+   "slug": "health-net-of-arizona-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/az/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 4767071,
+    "k": 518619,
+    "pct": 10.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 621900,
+    "k": 148099,
+    "pct": 23.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 132354,
+    "k": 10939,
+    "pct": 8.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 913,
+    "k": 297,
+    "pct": 32.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 50,
+    "k": 22,
+    "pct": 44.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3202241,
+    "k": 596289,
+    "pct": 18.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "Imperial Insurance Companies, Inc.",
+   "insurer_id": "85533",
+   "slug": "imperial-insurance-companies-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://exchange.imperialhealthplan.com/arizona/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 8920,
+    "k": 4472,
+    "pct": 50.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3599,
+    "k": 1645,
+    "pct": 45.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 899,
+    "k": 12,
+    "pct": 1.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 2393,
+    "k": 793,
+    "pct": 33.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "Oscar Health Plan, Inc.",
+   "insurer_id": "13877",
+   "slug": "oscar-health-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/az_tic_2027",
+   "claims_in_network": {
+    "n": 387568,
+    "k": 69003,
+    "pct": 17.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 90331,
+    "k": 61487,
+    "pct": 68.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 5400,
+    "k": 1676,
+    "pct": 31.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 3448,
+    "k": 680,
+    "pct": 19.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 283,
+    "k": 155,
+    "pct": 54.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 15,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 292877,
+    "k": 82246,
+    "pct": 28.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "UnitedHealthcare Benefits of Texas, Inc.",
+   "insurer_id": "32343",
+   "slug": "unitedhealthcare-benefits-of-texas-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "AZ",
+   "state_name": "Arizona",
+   "state_slug": "arizona",
+   "insurer": "UnitedHealthcare of Arizona, Inc.",
+   "insurer_id": "40702",
+   "slug": "unitedhealthcare-of-arizona-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 3020935,
+    "k": 740183,
+    "pct": 24.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 574749,
+    "k": 347823,
+    "pct": 60.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 25261,
+    "k": 8849,
+    "pct": 35.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1462,
+    "k": 790,
+    "pct": 54.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 692,
+    "k": 117,
+    "pct": 16.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2715431,
+    "k": 646181,
+    "pct": 23.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "AR",
+   "state_name": "Arkansas",
+   "state_slug": "arkansas",
+   "insurer": "HMO Partners, Inc.",
+   "insurer_id": "13262",
+   "slug": "hmo-partners-inc",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.healthadvantage-hmo.com/members/individual-and-family/member-rights/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1800143,
+    "k": 297161,
+    "pct": 16.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 56328,
+    "k": 26485,
+    "pct": 47.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3276,
+    "k": 961,
+    "pct": 29.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1678,
+    "k": 323,
+    "pct": 19.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 351,
+    "k": 96,
+    "pct": 27.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1506621,
+    "k": 248827,
+    "pct": 16.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "AR",
+   "state_name": "Arkansas",
+   "state_slug": "arkansas",
+   "insurer": "QCA Health Plan, Inc.",
+   "insurer_id": "70525",
+   "slug": "qca-health-plan-inc",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ar/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 3263861,
+    "k": 286478,
+    "pct": 8.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 177970,
+    "k": 11334,
+    "pct": 6.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 36551,
+    "k": 5677,
+    "pct": 15.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 546,
+    "k": 222,
+    "pct": 40.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 488,
+    "k": 200,
+    "pct": 41.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1593974,
+    "k": 245717,
+    "pct": 15.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "AR",
+   "state_name": "Arkansas",
+   "state_slug": "arkansas",
+   "insurer": "USAble HMO, Inc.",
+   "insurer_id": "48772",
+   "slug": "usable-hmo-inc",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.arkansasoctave.com/members/individual-and-family/member-rights/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1787131,
+    "k": 283918,
+    "pct": 15.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 13195,
+    "k": 5347,
+    "pct": 40.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 5425,
+    "k": 1515,
+    "pct": 27.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1639,
+    "k": 400,
+    "pct": 24.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 486,
+    "k": 162,
+    "pct": 33.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 766146,
+    "k": 123118,
+    "pct": 16.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "AR",
+   "state_name": "Arkansas",
+   "state_slug": "arkansas",
+   "insurer": "USAble Mutual Insurance Company",
+   "insurer_id": "75293",
+   "slug": "usable-mutual-insurance-company",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.arkansasbluecross.com/members/individual-and-family/member-rights/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 3803008,
+    "k": 570178,
+    "pct": 15.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 21197,
+    "k": 5816,
+    "pct": 27.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 16222,
+    "k": 4658,
+    "pct": 28.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 5782,
+    "k": 1632,
+    "pct": 28.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1766,
+    "k": 526,
+    "pct": 29.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 4295266,
+    "k": 669702,
+    "pct": 15.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "DE",
+   "state_name": "Delaware",
+   "state_slug": "delaware",
+   "insurer": "AmeriHealth Caritas VIP Next, Inc.",
+   "insurer_id": "72760",
+   "slug": "amerihealth-caritas-vip-next-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/de/transparency-in-coverage-2027",
+   "claims_in_network": {
+    "n": 217706,
+    "k": 63845,
+    "pct": 29.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 20763,
+    "k": 12251,
+    "pct": 59.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3989,
+    "k": 1391,
+    "pct": 34.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 79,
+    "k": 38,
+    "pct": 48.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 55,
+    "k": 26,
+    "pct": 47.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 165638,
+    "k": 46346,
+    "pct": 28.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "DE",
+   "state_name": "Delaware",
+   "state_slug": "delaware",
+   "insurer": "Highmark BCBSD Inc.",
+   "insurer_id": "76168",
+   "slug": "highmark-bcbsd-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "http://www.highmark.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1993680,
+    "k": 385536,
+    "pct": 19.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 34341,
+    "k": 8702,
+    "pct": 25.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 11545,
+    "k": 713,
+    "pct": 6.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 158,
+    "k": 69,
+    "pct": 43.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 55,
+    "k": 12,
+    "pct": 21.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2042140,
+    "k": 387306,
+    "pct": 19.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "AmeriHealth Caritas Florida, Inc.",
+   "insurer_id": "67926",
+   "slug": "amerihealth-caritas-florida-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/fl/transparency-in-coverage-2027.aspx",
+   "claims_in_network": {
+    "n": 1308880,
+    "k": 233629,
+    "pct": 17.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 233935,
+    "k": 111248,
+    "pct": 47.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 9780,
+    "k": 2532,
+    "pct": 25.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 113,
+    "k": 57,
+    "pct": 50.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 76,
+    "k": 40,
+    "pct": 52.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 79451,
+    "k": 20441,
+    "pct": 25.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "AvMed, Inc.",
+   "insurer_id": "19898",
+   "slug": "avmed-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://shc-p-001.sitecorecontenthub.cloud/api/public/content/Claims-Payment-Policy-and-Other-Information.pdf",
+   "claims_in_network": {
+    "n": 731716,
+    "k": 181070,
+    "pct": 24.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 112225,
+    "k": 31317,
+    "pct": 27.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 25576,
+    "k": 3486,
+    "pct": 13.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 22,
+    "k": 11,
+    "pct": 50.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 397,
+    "k": 189,
+    "pct": 47.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 431996,
+    "k": 118089,
+    "pct": 27.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Blue Cross and Blue Shield of Florida",
+   "insurer_id": "16842",
+   "slug": "blue-cross-and-blue-shield-of-florida",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.floridablue.com/members/tools-resources/transparency",
+   "claims_in_network": {
+    "n": 23245355,
+    "k": 3199676,
+    "pct": 13.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 887925,
+    "k": 37805,
+    "pct": 4.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 416956,
+    "k": 45730,
+    "pct": 11.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2139,
+    "k": 1039,
+    "pct": 48.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1000,
+    "k": 378,
+    "pct": 37.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 11,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 22220889,
+    "k": 4251990,
+    "pct": 19.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Capital Health Plan",
+   "insurer_id": "66966",
+   "slug": "capital-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://capitalhealth.com/legal/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 466619,
+    "k": 448953,
+    "pct": 96.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 27101,
+    "k": 17666,
+    "pct": 65.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6072,
+    "k": 1496,
+    "pct": 24.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 63,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 996,
+    "k": 111,
+    "pct": 11.1,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 540104,
+    "k": 35255,
+    "pct": 6.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Centene Venture Company Florida",
+   "insurer_id": "49004",
+   "slug": "centene-venture-company-florida",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/fl/resources/handbooks-forms/2027-transparency-notice-fl-hmo",
+   "claims_in_network": {
+    "n": 54211392,
+    "k": 5291270,
+    "pct": 9.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 7377303,
+    "k": 1286820,
+    "pct": 17.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1590674,
+    "k": 83795,
+    "pct": 5.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 11572,
+    "k": 4465,
+    "pct": 38.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 9049,
+    "k": 3672,
+    "pct": 40.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 258,
+    "k": 94,
+    "pct": 36.4,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Community Care Network Inc",
+   "insurer_id": "13887",
+   "slug": "community-care-network-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://22healthplan.com/for-members/documents/toc/",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Florida Health Care Plan, Inc.",
+   "insurer_id": "56503",
+   "slug": "florida-health-care-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.fhcp.com/documents/for-members/forms/Transparency-in-Coverage.pdf",
+   "claims_in_network": {
+    "n": 3106195,
+    "k": 419165,
+    "pct": 13.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 100885,
+    "k": 60888,
+    "pct": 60.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 16586,
+    "k": 4526,
+    "pct": 27.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 175,
+    "k": 66,
+    "pct": 37.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 447,
+    "k": 59,
+    "pct": 13.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3536806,
+    "k": 602771,
+    "pct": 17.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Health First Commercial Plans, Inc.",
+   "insurer_id": "36194",
+   "slug": "health-first-commercial-plans-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.hf.org/health-first-health-plans/hmo",
+   "claims_in_network": {
+    "n": 3448326,
+    "k": 573724,
+    "pct": 16.6,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 208798,
+    "k": 103792,
+    "pct": 49.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 27707,
+    "k": 3262,
+    "pct": 11.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 148,
+    "k": 84,
+    "pct": 56.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 615,
+    "k": 313,
+    "pct": 50.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 2123475,
+    "k": 475722,
+    "pct": 22.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Health Options, Inc.",
+   "insurer_id": "30252",
+   "slug": "health-options-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.floridablue.com/members/tools-resources/transparency",
+   "claims_in_network": {
+    "n": 39603773,
+    "k": 6445991,
+    "pct": 16.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 320257,
+    "k": 7681,
+    "pct": 2.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2393191,
+    "k": 65645,
+    "pct": 2.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2446,
+    "k": 1165,
+    "pct": 47.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 927,
+    "k": 389,
+    "pct": 42.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 42561091,
+    "k": 10507969,
+    "pct": 24.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Oscar Health Maintenance Organization of Florida",
+   "insurer_id": "21525",
+   "slug": "oscar-health-maintenance-organization-of-florida",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://hioscar.com/fl_tic_2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "Simply Healthcare Plans, Inc.",
+   "insurer_id": "44228",
+   "slug": "simply-healthcare-plans-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.wellpoint.com/notices/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 164215,
+    "k": 18893,
+    "pct": 11.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 47768,
+    "k": 28167,
+    "pct": 59.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4654,
+    "k": 1027,
+    "pct": 22.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 138,
+    "k": 16,
+    "pct": 11.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 51,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "FL",
+   "state_name": "Florida",
+   "state_slug": "florida",
+   "insurer": "UnitedHealthcare of Florida, Inc.",
+   "insurer_id": "68398",
+   "slug": "unitedhealthcare-of-florida-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 3350369,
+    "k": 703125,
+    "pct": 21.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1061342,
+    "k": 504292,
+    "pct": 47.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 27873,
+    "k": 8905,
+    "pct": 31.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1013,
+    "k": 348,
+    "pct": 34.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 615,
+    "k": 118,
+    "pct": 19.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3564380,
+    "k": 719832,
+    "pct": 20.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "HI",
+   "state_name": "Hawaii",
+   "state_slug": "hawaii",
+   "insurer": "Hawaii Medical Service Association",
+   "insurer_id": "18350",
+   "slug": "hawaii-medical-service-association",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hmsa.com/aca-transparency",
+   "claims_in_network": {
+    "n": 773728,
+    "k": 203127,
+    "pct": 26.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 4410,
+    "k": 1126,
+    "pct": 25.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4049,
+    "k": 695,
+    "pct": 17.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 104,
+    "k": 43,
+    "pct": 41.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 137,
+    "k": 62,
+    "pct": 45.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 723658,
+    "k": 198069,
+    "pct": 27.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "HI",
+   "state_name": "Hawaii",
+   "state_slug": "hawaii",
+   "insurer": "Kaiser Foundation Health Plan, Inc.",
+   "insurer_id": "60612",
+   "slug": "kaiser-foundation-health-plan-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://healthy.kaiserpermanente.org/hawaii/support/transparency-coverage",
+   "claims_in_network": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1126,
+    "k": 529,
+    "pct": 47.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 344,
+    "k": 157,
+    "pct": 45.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 39,
+    "k": 11,
+    "pct": 28.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 21,
+    "k": 0,
+    "pct": 0.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 11489,
+    "k": 584,
+    "pct": 5.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "IN",
+   "state_name": "Indiana",
+   "state_slug": "indiana",
+   "insurer": "AmeriHealth Caritas Indiana Inc",
+   "insurer_id": "11003",
+   "slug": "amerihealth-caritas-indiana-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/in/transparency-in-coverage-2027.aspx",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "IN",
+   "state_name": "Indiana",
+   "state_slug": "indiana",
+   "insurer": "Anthem Insurance Companies, Inc.",
+   "insurer_id": "17575",
+   "slug": "anthem-insurance-companies-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.anthem.com/microsites/transparency-in-coverage.html",
+   "claims_in_network": {
+    "n": 3361445,
+    "k": 293847,
+    "pct": 8.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 821645,
+    "k": 396562,
+    "pct": 48.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 87439,
+    "k": 14188,
+    "pct": 16.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1400,
+    "k": 189,
+    "pct": 13.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 860,
+    "k": 245,
+    "pct": 28.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 11,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2552004,
+    "k": 267110,
+    "pct": 10.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "IN",
+   "state_name": "Indiana",
+   "state_slug": "indiana",
+   "insurer": "Coordinated Care Corporation Indiana",
+   "insurer_id": "35065",
+   "slug": "coordinated-care-corporation-indiana",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/in/resources/handbooks-forms/transparency-notice-2027/",
+   "claims_in_network": {
+    "n": 5737575,
+    "k": 671270,
+    "pct": 11.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 321708,
+    "k": 91377,
+    "pct": 28.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 156232,
+    "k": 18807,
+    "pct": 12.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2049,
+    "k": 786,
+    "pct": 38.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 2044,
+    "k": 786,
+    "pct": 38.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 70,
+    "k": 37,
+    "pct": 52.9,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "IN",
+   "state_name": "Indiana",
+   "state_slug": "indiana",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "72850",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 47314,
+    "k": 8176,
+    "pct": 17.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 6999,
+    "k": 4342,
+    "pct": 62.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 764,
+    "k": 264,
+    "pct": 34.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 29,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 19,
+    "k": 0,
+    "pct": 0.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "IA",
+   "state_name": "Iowa",
+   "state_slug": "iowa",
+   "insurer": "Avera Health Plans, Inc.",
+   "insurer_id": "74980",
+   "slug": "avera-health-plans-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.averahealthplans.com/insurance/about/legal-privacy-notices/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "IA",
+   "state_name": "Iowa",
+   "state_slug": "iowa",
+   "insurer": "Iowa Total Care, Inc.",
+   "insurer_id": "48286",
+   "slug": "iowa-total-care-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ia/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 309045,
+    "k": 44021,
+    "pct": 14.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 30667,
+    "k": 8933,
+    "pct": 29.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 7676,
+    "k": 796,
+    "pct": 10.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "IA",
+   "state_name": "Iowa",
+   "state_slug": "iowa",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "45819",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ia_tic_2027",
+   "claims_in_network": {
+    "n": 696332,
+    "k": 122005,
+    "pct": 17.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 192995,
+    "k": 86720,
+    "pct": 44.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 9513,
+    "k": 3487,
+    "pct": 36.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 8699,
+    "k": 2571,
+    "pct": 29.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 446,
+    "k": 207,
+    "pct": 46.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 37,
+    "k": 13,
+    "pct": 35.1,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 467434,
+    "k": 117430,
+    "pct": 25.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "IA",
+   "state_name": "Iowa",
+   "state_slug": "iowa",
+   "insurer": "UnitedHealthcare Plan of the River Valley, Inc.",
+   "insurer_id": "56610",
+   "slug": "unitedhealthcare-plan-of-the-river-valley-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 19811,
+    "k": 3163,
+    "pct": 16.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3765,
+    "k": 2197,
+    "pct": 58.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 268,
+    "k": 84,
+    "pct": 31.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "IA",
+   "state_name": "Iowa",
+   "state_slug": "iowa",
+   "insurer": "Wellmark Health Plan of Iowa, Inc.",
+   "insurer_id": "25896",
+   "slug": "wellmark-health-plan-of-iowa-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.wellmark.com/transparency",
+   "claims_in_network": {
+    "n": 4133789,
+    "k": 745842,
+    "pct": 18.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 164236,
+    "k": 128395,
+    "pct": 78.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 49762,
+    "k": 12468,
+    "pct": 25.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 475,
+    "k": 201,
+    "pct": 42.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 268,
+    "k": 87,
+    "pct": 32.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 3945784,
+    "k": 704036,
+    "pct": 17.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "KS",
+   "state_name": "Kansas",
+   "state_slug": "kansas",
+   "insurer": "Blue Cross and Blue Shield of Kansas City",
+   "insurer_id": "94248",
+   "slug": "blue-cross-and-blue-shield-of-kansas-city",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bluekc.com/coverage-terms-and-processes/",
+   "claims_in_network": {
+    "n": 51789,
+    "k": 9939,
+    "pct": 19.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1829,
+    "k": 1829,
+    "pct": 100.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 854,
+    "k": 84,
+    "pct": 9.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 14,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 17,
+    "k": 14,
+    "pct": 82.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 102463,
+    "k": 20939,
+    "pct": 20.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "KS",
+   "state_name": "Kansas",
+   "state_slug": "kansas",
+   "insurer": "Blue Cross and Blue Shield of Kansas, Inc.",
+   "insurer_id": "18558",
+   "slug": "blue-cross-and-blue-shield-of-kansas-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsks.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 915626,
+    "k": 89937,
+    "pct": 9.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 64788,
+    "k": 54301,
+    "pct": 83.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3998,
+    "k": 136,
+    "pct": 3.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 90,
+    "k": 32,
+    "pct": 35.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 95,
+    "k": 60,
+    "pct": 63.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1042704,
+    "k": 134229,
+    "pct": 12.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "KS",
+   "state_name": "Kansas",
+   "state_slug": "kansas",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "34368",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ks/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 5464648,
+    "k": 621666,
+    "pct": 11.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 332966,
+    "k": 67033,
+    "pct": 20.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 182271,
+    "k": 17980,
+    "pct": 9.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1781,
+    "k": 956,
+    "pct": 53.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1778,
+    "k": 956,
+    "pct": 53.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 29,
+    "k": 24,
+    "pct": 82.8,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3865491,
+    "k": 734165,
+    "pct": 19.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "KS",
+   "state_name": "Kansas",
+   "state_slug": "kansas",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "43490",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ks_tic_2027",
+   "claims_in_network": {
+    "n": 363667,
+    "k": 65133,
+    "pct": 17.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 90235,
+    "k": 41352,
+    "pct": 45.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6710,
+    "k": 2182,
+    "pct": 32.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 4076,
+    "k": 634,
+    "pct": 15.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 368,
+    "k": 187,
+    "pct": 50.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 28,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 296092,
+    "k": 77239,
+    "pct": 26.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "KS",
+   "state_name": "Kansas",
+   "state_slug": "kansas",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "94968",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 836787,
+    "k": 182857,
+    "pct": 21.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 169653,
+    "k": 113426,
+    "pct": 66.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 9957,
+    "k": 3380,
+    "pct": 33.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 276,
+    "k": 106,
+    "pct": 38.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 254,
+    "k": 27,
+    "pct": 10.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 935058,
+    "k": 167716,
+    "pct": 17.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "Ambetter Health of Louisiana, Inc.",
+   "insurer_id": "90787",
+   "slug": "ambetter-health-of-louisiana-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/la/resources/handbooks-forms/transparency-notice-2027/",
+   "claims_in_network": {
+    "n": 3212572,
+    "k": 399109,
+    "pct": 12.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 690041,
+    "k": 151666,
+    "pct": 22.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 149360,
+    "k": 8538,
+    "pct": 5.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 543,
+    "k": 173,
+    "pct": 31.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 540,
+    "k": 171,
+    "pct": 31.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1704183,
+    "k": 326106,
+    "pct": 19.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "AmeriHealth Caritas Louisiana, Inc.",
+   "insurer_id": "38246",
+   "slug": "amerihealth-caritas-louisiana-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/la/transparency-in-coverage-2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "CHRISTUS Health Plan Louisiana",
+   "insurer_id": "98780",
+   "slug": "christus-health-plan-louisiana",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.christushealthplan.org/member-resources/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 175510,
+    "k": 35194,
+    "pct": 20.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 55684,
+    "k": 28505,
+    "pct": 51.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 433,
+    "k": 40,
+    "pct": 9.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 876,
+    "k": 44,
+    "pct": 5.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 154775,
+    "k": 22585,
+    "pct": 14.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "HMO Louisiana, Inc.",
+   "insurer_id": "19636",
+   "slug": "hmo-louisiana-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.lablue.com/footer/transparencyhmola",
+   "claims_in_network": {
+    "n": 6629761,
+    "k": 1360028,
+    "pct": 20.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 681397,
+    "k": 18611,
+    "pct": 2.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 86776,
+    "k": 9140,
+    "pct": 10.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2372,
+    "k": 952,
+    "pct": 40.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 2001,
+    "k": 905,
+    "pct": 45.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 174,
+    "k": 78,
+    "pct": 44.8,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 5472870,
+    "k": 993016,
+    "pct": 18.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "Louisiana Health Service & Indemnity Company",
+   "insurer_id": "97176",
+   "slug": "louisiana-health-service-and-indemnity-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.lablue.com/footer/transparencylahsic",
+   "claims_in_network": {
+    "n": 1039874,
+    "k": 186882,
+    "pct": 18.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 83581,
+    "k": 7861,
+    "pct": 9.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 14887,
+    "k": 1540,
+    "pct": 10.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 379,
+    "k": 173,
+    "pct": 45.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 368,
+    "k": 174,
+    "pct": 47.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 37,
+    "k": 17,
+    "pct": 45.9,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 992770,
+    "k": 147920,
+    "pct": 14.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "LA",
+   "state_name": "Louisiana",
+   "state_slug": "louisiana",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "69842",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 1589958,
+    "k": 382768,
+    "pct": 24.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 622000,
+    "k": 336043,
+    "pct": 54.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 15177,
+    "k": 4801,
+    "pct": 31.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 104,
+    "k": 50,
+    "pct": 48.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 215,
+    "k": 24,
+    "pct": 11.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1031551,
+    "k": 248739,
+    "pct": 24.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "Blue Care Network of Michigan",
+   "insurer_id": "98185",
+   "slug": "blue-care-network-of-michigan",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsm.com/what-to-know-about-aca-plans/index/",
+   "claims_in_network": {
+    "n": 4036228,
+    "k": 1248675,
+    "pct": 30.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 117085,
+    "k": 694429,
+    "pct": 593.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6788,
+    "k": 2648,
+    "pct": 39.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 115,
+    "k": 73,
+    "pct": 63.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 283,
+    "k": 222,
+    "pct": 78.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 68,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 3398397,
+    "k": 630298,
+    "pct": 18.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "Blue Cross Blue Shield of Michigan Mutual Insurance Company",
+   "insurer_id": "15560",
+   "slug": "blue-cross-blue-shield-of-michigan-mutual-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsm.com/what-to-know-about-aca-plans/index/",
+   "claims_in_network": {
+    "n": 2038431,
+    "k": 248492,
+    "pct": 12.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 561557,
+    "k": 84182,
+    "pct": 15.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 39391,
+    "k": 4119,
+    "pct": 10.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 238,
+    "k": 77,
+    "pct": 32.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 87,
+    "k": 45,
+    "pct": 51.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 17,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1807844,
+    "k": 236257,
+    "pct": 13.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "McLaren Health Plan Community",
+   "insurer_id": "74917",
+   "slug": "mclaren-health-plan-community",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.mclarenhealthplan.org/mclaren-health-plan/claims-payment-information-mhp",
+   "claims_in_network": {
+    "n": 113587,
+    "k": 23730,
+    "pct": 20.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 7219,
+    "k": 6900,
+    "pct": 95.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 98885,
+    "k": 71,
+    "pct": 0.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 21,
+    "k": 14,
+    "pct": 66.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 31,
+    "k": 22,
+    "pct": 71.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 100136,
+    "k": 19916,
+    "pct": 19.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "Meridian Health Plan of Michigan, Inc.",
+   "insurer_id": "58594",
+   "slug": "meridian-health-plan-of-michigan-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/mi/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 6167595,
+    "k": 929455,
+    "pct": 15.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 764615,
+    "k": 163669,
+    "pct": 21.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 128643,
+    "k": 13670,
+    "pct": 10.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1564,
+    "k": 800,
+    "pct": 51.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1561,
+    "k": 799,
+    "pct": 51.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 3404769,
+    "k": 941541,
+    "pct": 27.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "77739",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.hioscar.com/mi_tic_2027",
+   "claims_in_network": {
+    "n": 129931,
+    "k": 23592,
+    "pct": 18.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 26290,
+    "k": 12038,
+    "pct": 45.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2070,
+    "k": 706,
+    "pct": 34.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1030,
+    "k": 224,
+    "pct": 21.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 101,
+    "k": 47,
+    "pct": 46.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 11,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 54216,
+    "k": 14778,
+    "pct": 27.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "Priority Health",
+   "insurer_id": "29698",
+   "slug": "priority-health",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.priorityhealth.com/individual-family-health-insurance",
+   "claims_in_network": {
+    "n": 3223624,
+    "k": 243454,
+    "pct": 7.6,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 80806,
+    "k": 31316,
+    "pct": 38.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 12492,
+    "k": 1723,
+    "pct": 13.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 111,
+    "k": 17,
+    "pct": 15.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 165,
+    "k": 40,
+    "pct": 24.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 23,
+    "k": 0,
+    "pct": 0.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 4106893,
+    "k": 324164,
+    "pct": 7.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "MI",
+   "state_name": "Michigan",
+   "state_slug": "michigan",
+   "insurer": "UnitedHealthcare Community Plan, Inc.",
+   "insurer_id": "71667",
+   "slug": "unitedhealthcare-community-plan-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 1035928,
+    "k": 250592,
+    "pct": 24.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 390181,
+    "k": 209741,
+    "pct": 53.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 10299,
+    "k": 4077,
+    "pct": 39.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 399,
+    "k": 201,
+    "pct": 50.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 225,
+    "k": 26,
+    "pct": 11.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 780202,
+    "k": 204912,
+    "pct": 26.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "MS",
+   "state_name": "Mississippi",
+   "state_slug": "mississippi",
+   "insurer": "Ambetter of Magnolia Inc.",
+   "insurer_id": "90714",
+   "slug": "ambetter-of-magnolia-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ms/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 9807139,
+    "k": 1048108,
+    "pct": 10.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 503047,
+    "k": 111882,
+    "pct": 22.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 258463,
+    "k": 19287,
+    "pct": 7.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1233,
+    "k": 493,
+    "pct": 40.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1233,
+    "k": 493,
+    "pct": 40.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 11374142,
+    "k": 1824195,
+    "pct": 16.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "MS",
+   "state_name": "Mississippi",
+   "state_slug": "mississippi",
+   "insurer": "Oscar Health Plan, Inc.",
+   "insurer_id": "20635",
+   "slug": "oscar-health-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://hioscar.com/ms_tic_2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "MS",
+   "state_name": "Mississippi",
+   "state_slug": "mississippi",
+   "insurer": "UnitedHealthcare of Mississippi, Inc.",
+   "insurer_id": "97560",
+   "slug": "unitedhealthcare-of-mississippi-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 431692,
+    "k": 93567,
+    "pct": 21.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 78855,
+    "k": 47662,
+    "pct": 60.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4046,
+    "k": 1294,
+    "pct": 32.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 124,
+    "k": 46,
+    "pct": 37.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 76,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 314752,
+    "k": 67514,
+    "pct": 21.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "Blue Cross and Blue Shield of Kansas City",
+   "insurer_id": "34762",
+   "slug": "blue-cross-and-blue-shield-of-kansas-city",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bluekc.com/coverage-terms-and-processes/",
+   "claims_in_network": {
+    "n": 106513,
+    "k": 26133,
+    "pct": 24.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 2890,
+    "k": 2890,
+    "pct": 100.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1424,
+    "k": 188,
+    "pct": 13.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 25,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 14,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 152989,
+    "k": 31697,
+    "pct": 20.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "99723",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/mo/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 9025006,
+    "k": 981732,
+    "pct": 10.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 914951,
+    "k": 156653,
+    "pct": 17.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 275243,
+    "k": 26138,
+    "pct": 9.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 62,
+    "k": 43,
+    "pct": 69.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 5919313,
+    "k": 1113385,
+    "pct": 18.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "Healthy Alliance Life Insurance Company",
+   "insurer_id": "32753",
+   "slug": "healthy-alliance-life-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.anthem.com/microsites/transparency-in-coverage.html",
+   "claims_in_network": {
+    "n": 2352849,
+    "k": 171959,
+    "pct": 7.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 113300,
+    "k": 51116,
+    "pct": 45.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 67497,
+    "k": 10225,
+    "pct": 15.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 230,
+    "k": 79,
+    "pct": 34.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 789,
+    "k": 238,
+    "pct": 30.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3941746,
+    "k": 295802,
+    "pct": 7.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "Medica Insurance Company",
+   "insurer_id": "53461",
+   "slug": "medica-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.medica.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 621628,
+    "k": 127628,
+    "pct": 20.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 25350,
+    "k": 20845,
+    "pct": 82.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 8639,
+    "k": 3751,
+    "pct": 43.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 94,
+    "k": 35,
+    "pct": 37.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 406622,
+    "k": 95180,
+    "pct": 23.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "69512",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/mo_tic_2027",
+   "claims_in_network": {
+    "n": 352178,
+    "k": 64953,
+    "pct": 18.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 53323,
+    "k": 24272,
+    "pct": 45.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4816,
+    "k": 1549,
+    "pct": 32.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2959,
+    "k": 779,
+    "pct": 26.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 314,
+    "k": 150,
+    "pct": 47.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 12,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 544633,
+    "k": 133294,
+    "pct": 24.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "MO",
+   "state_name": "Missouri",
+   "state_slug": "missouri",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "95426",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 1145171,
+    "k": 220146,
+    "pct": 19.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 323356,
+    "k": 195940,
+    "pct": 60.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 14260,
+    "k": 4442,
+    "pct": 31.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 341,
+    "k": 149,
+    "pct": 43.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 334,
+    "k": 46,
+    "pct": 13.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1070569,
+    "k": 203531,
+    "pct": 19.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "MT",
+   "state_name": "Montana",
+   "state_slug": "montana",
+   "insurer": "Blue Cross and Blue Shield of Montana",
+   "insurer_id": "30751",
+   "slug": "blue-cross-and-blue-shield-of-montana",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsmt.com/member/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1681481,
+    "k": 219509,
+    "pct": 13.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 54745,
+    "k": 12651,
+    "pct": 23.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 15960,
+    "k": 2881,
+    "pct": 18.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 392,
+    "k": 96,
+    "pct": 24.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 266,
+    "k": 66,
+    "pct": 24.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1143888,
+    "k": 142689,
+    "pct": 12.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "MT",
+   "state_name": "Montana",
+   "state_slug": "montana",
+   "insurer": "Montana Health Cooperative",
+   "insurer_id": "32225",
+   "slug": "montana-health-cooperative",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://mountainhealth.coop/members/",
+   "claims_in_network": {
+    "n": 858133,
+    "k": 103510,
+    "pct": 12.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 63923,
+    "k": 43995,
+    "pct": 68.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 7185,
+    "k": 585,
+    "pct": 8.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 26,
+    "k": 15,
+    "pct": 57.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 130,
+    "k": 75,
+    "pct": 57.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 868851,
+    "k": 91410,
+    "pct": 10.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "NE",
+   "state_name": "Nebraska",
+   "state_slug": "nebraska",
+   "insurer": "Blue Cross and Blue Shield of Nebraska",
+   "insurer_id": "29678",
+   "slug": "blue-cross-and-blue-shield-of-nebraska",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.nebraskablue.com/About-Us/Policies-and-Best-Practices/TCR-CAA",
+   "claims_in_network": {
+    "n": 800496,
+    "k": 106584,
+    "pct": 13.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 19519,
+    "k": 19001,
+    "pct": 97.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 67830,
+    "k": 8610,
+    "pct": 12.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 4476,
+    "k": 1218,
+    "pct": 27.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 635,
+    "k": 220,
+    "pct": 34.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 12,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 590006,
+    "k": 91925,
+    "pct": 15.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "NE",
+   "state_name": "Nebraska",
+   "state_slug": "nebraska",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "13484",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ne/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "NE",
+   "state_name": "Nebraska",
+   "state_slug": "nebraska",
+   "insurer": "Medica Insurance Company",
+   "insurer_id": "20305",
+   "slug": "medica-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.medica.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 957841,
+    "k": 180971,
+    "pct": 18.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 37044,
+    "k": 31062,
+    "pct": 83.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6952,
+    "k": 914,
+    "pct": 13.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 384,
+    "k": 141,
+    "pct": 36.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1322366,
+    "k": 281819,
+    "pct": 21.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "NE",
+   "state_name": "Nebraska",
+   "state_slug": "nebraska",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "57424",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ne_tic_2027",
+   "claims_in_network": {
+    "n": 90024,
+    "k": 15381,
+    "pct": 17.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3529,
+    "k": 2499,
+    "pct": 70.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1773,
+    "k": 625,
+    "pct": 35.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 852,
+    "k": 299,
+    "pct": 35.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 108,
+    "k": 39,
+    "pct": 36.1,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 46889,
+    "k": 10186,
+    "pct": 21.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "NE",
+   "state_name": "Nebraska",
+   "state_slug": "nebraska",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "73102",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 111020,
+    "k": 22396,
+    "pct": 20.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 21363,
+    "k": 14486,
+    "pct": 67.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1479,
+    "k": 553,
+    "pct": 37.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 48,
+    "k": 15,
+    "pct": 31.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 45,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "NH",
+   "state_name": "New Hampshire",
+   "state_slug": "new-hampshire",
+   "insurer": "Boston Medical Center Health Plan, Inc.",
+   "insurer_id": "13219",
+   "slug": "boston-medical-center-health-plan-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.wellsense.org/about-us/interoperability#toc",
+   "claims_in_network": {
+    "n": 25401,
+    "k": 3681,
+    "pct": 14.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 51107,
+    "k": 10588,
+    "pct": 20.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3533,
+    "k": 1081,
+    "pct": 30.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 14,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 78,
+    "k": 30,
+    "pct": 38.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "NH",
+   "state_name": "New Hampshire",
+   "state_slug": "new-hampshire",
+   "insurer": "Harvard Pilgrim Health Care of NE",
+   "insurer_id": "59025",
+   "slug": "harvard-pilgrim-health-care-of-ne",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.harvardpilgrim.org/public/transparency",
+   "claims_in_network": {
+    "n": 104060,
+    "k": 31257,
+    "pct": 30.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 80,
+    "k": 80,
+    "pct": 100.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 629,
+    "k": 238,
+    "pct": 37.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 20,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 117211,
+    "k": 33754,
+    "pct": 28.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "NH",
+   "state_name": "New Hampshire",
+   "state_slug": "new-hampshire",
+   "insurer": "Matthew Thornton Health Plan, Inc.",
+   "insurer_id": "96751",
+   "slug": "matthew-thornton-health-plan-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.anthem.com/microsites/transparency-in-coverage.html",
+   "claims_in_network": {
+    "n": 1847031,
+    "k": 123552,
+    "pct": 6.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 37309,
+    "k": 20235,
+    "pct": 54.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 54137,
+    "k": 6801,
+    "pct": 12.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 409,
+    "k": 145,
+    "pct": 35.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 496,
+    "k": 107,
+    "pct": 21.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2199992,
+    "k": 153654,
+    "pct": 7.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "NC",
+   "state_name": "North Carolina",
+   "state_slug": "north-carolina",
+   "insurer": "Ambetter of North Carolina Inc.",
+   "insurer_id": "77264",
+   "slug": "ambetter-of-north-carolina-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/nc/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 5831495,
+    "k": 708961,
+    "pct": 12.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 854184,
+    "k": 145113,
+    "pct": 17.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 204522,
+    "k": 16791,
+    "pct": 8.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1764,
+    "k": 924,
+    "pct": 52.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1763,
+    "k": 924,
+    "pct": 52.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 4295438,
+    "k": 924286,
+    "pct": 21.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "NC",
+   "state_name": "North Carolina",
+   "state_slug": "north-carolina",
+   "insurer": "AmeriHealth Caritas North Carolina, Inc.",
+   "insurer_id": "17414",
+   "slug": "amerihealth-caritas-north-carolina-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/nc/transparency-in-coverage-2027",
+   "claims_in_network": {
+    "n": 1126165,
+    "k": 294759,
+    "pct": 26.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 172631,
+    "k": 83263,
+    "pct": 48.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 11346,
+    "k": 5454,
+    "pct": 48.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 368,
+    "k": 215,
+    "pct": 58.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 267,
+    "k": 162,
+    "pct": 60.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 387771,
+    "k": 109227,
+    "pct": 28.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "NC",
+   "state_name": "North Carolina",
+   "state_slug": "north-carolina",
+   "insurer": "Blue Cross and Blue Shield of NC",
+   "insurer_id": "11512",
+   "slug": "blue-cross-and-blue-shield-of-nc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bluecrossnc.com/members/health-plans/member-forms/transparency-coverage",
+   "claims_in_network": {
+    "n": 20910323,
+    "k": 4465115,
+    "pct": 21.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 941038,
+    "k": 452343,
+    "pct": 48.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 409354,
+    "k": 69777,
+    "pct": 17.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2618,
+    "k": 856,
+    "pct": 32.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1811,
+    "k": 633,
+    "pct": 35.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 100,
+    "k": 54,
+    "pct": 54.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 16183703,
+    "k": 3116071,
+    "pct": 19.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "NC",
+   "state_name": "North Carolina",
+   "state_slug": "north-carolina",
+   "insurer": "Oscar Health Plan of North Carolina, Inc",
+   "insurer_id": "69803",
+   "slug": "oscar-health-plan-of-north-carolina-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/nc_tic_2027",
+   "claims_in_network": {
+    "n": 198147,
+    "k": 25387,
+    "pct": 12.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 50812,
+    "k": 24059,
+    "pct": 47.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3738,
+    "k": 1292,
+    "pct": 34.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1520,
+    "k": 297,
+    "pct": 19.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 197,
+    "k": 87,
+    "pct": 44.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 21,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 81081,
+    "k": 17549,
+    "pct": 21.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "NC",
+   "state_name": "North Carolina",
+   "state_slug": "north-carolina",
+   "insurer": "UnitedHealthcare of North Carolina, Inc",
+   "insurer_id": "54332",
+   "slug": "unitedhealthcare-of-north-carolina-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 1618011,
+    "k": 363243,
+    "pct": 22.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 308042,
+    "k": 196512,
+    "pct": 63.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 15269,
+    "k": 4673,
+    "pct": 30.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 262,
+    "k": 128,
+    "pct": 48.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 314,
+    "k": 44,
+    "pct": 14.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1601659,
+    "k": 339054,
+    "pct": 21.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "ND",
+   "state_name": "North Dakota",
+   "state_slug": "north-dakota",
+   "insurer": "Blue Cross Blue Shield of North Dakota",
+   "insurer_id": "37160",
+   "slug": "blue-cross-blue-shield-of-north-dakota",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsnd.com/privacy-legal/transparency-in-coverage/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 768234,
+    "k": 54706,
+    "pct": 7.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 10288,
+    "k": 4127,
+    "pct": 40.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 32731,
+    "k": 2121,
+    "pct": 6.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 24,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 167,
+    "k": 108,
+    "pct": 64.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 717367,
+    "k": 96964,
+    "pct": 13.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "ND",
+   "state_name": "North Dakota",
+   "state_slug": "north-dakota",
+   "insurer": "Medica Health Plans",
+   "insurer_id": "73751",
+   "slug": "medica-health-plans",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.medica.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 131657,
+    "k": 31275,
+    "pct": 23.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 5207,
+    "k": 4837,
+    "pct": 92.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2020,
+    "k": 796,
+    "pct": 39.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 30,
+    "k": 13,
+    "pct": 43.3,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 72125,
+    "k": 15098,
+    "pct": 20.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "ND",
+   "state_name": "North Dakota",
+   "state_slug": "north-dakota",
+   "insurer": "Sanford Health Plan",
+   "insurer_id": "89364",
+   "slug": "sanford-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.sanfordhealthplan.com/members/claims-payment-information",
+   "claims_in_network": {
+    "n": 658078,
+    "k": 19805,
+    "pct": 3.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 16716,
+    "k": 7669,
+    "pct": 45.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6797,
+    "k": 998,
+    "pct": 14.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 173,
+    "k": 121,
+    "pct": 69.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 246,
+    "k": 151,
+    "pct": 61.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 642746,
+    "k": 28533,
+    "pct": 4.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "AmeriHealth Caritas Ohio Inc",
+   "insurer_id": "10337",
+   "slug": "amerihealth-caritas-ohio-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.amerihealthcaritasnext.com/oh/transparency-in-coverage-2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Antidote Health Plan of Ohio",
+   "insurer_id": "31981",
+   "slug": "antidote-health-plan-of-ohio",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.antidotehealth.com/legal/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 47326,
+    "k": 5966,
+    "pct": 12.6,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3708,
+    "k": 934,
+    "pct": 25.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1916,
+    "k": 114,
+    "pct": 5.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 429,
+    "k": 157,
+    "pct": 36.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 17,
+    "k": 14,
+    "pct": 82.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Buckeye Community Health Plan",
+   "insurer_id": "41047",
+   "slug": "buckeye-community-health-plan",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/oh/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 5038090,
+    "k": 603488,
+    "pct": 12.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 543965,
+    "k": 133810,
+    "pct": 24.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 148346,
+    "k": 13618,
+    "pct": 9.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 521,
+    "k": 286,
+    "pct": 54.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 420,
+    "k": 238,
+    "pct": 56.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 11,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 3673782,
+    "k": 714834,
+    "pct": 19.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Community Insurance Company",
+   "insurer_id": "29276",
+   "slug": "community-insurance-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.anthem.com/microsites/transparency-in-coverage.html",
+   "claims_in_network": {
+    "n": 3830625,
+    "k": 303706,
+    "pct": 7.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 253761,
+    "k": 150171,
+    "pct": 59.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 106266,
+    "k": 17252,
+    "pct": 16.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1066,
+    "k": 326,
+    "pct": 30.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1303,
+    "k": 351,
+    "pct": 26.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 3535080,
+    "k": 294314,
+    "pct": 8.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Medical Mutual of Ohio",
+   "insurer_id": "80627",
+   "slug": "medical-mutual-of-ohio",
+   "exchange_type": "SPE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.medmutual.com/Individuals-and-Families/Transparency-In-Qualified-Health-Coverage",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Oscar Buckeye State Insurance Corp.",
+   "insurer_id": "29341",
+   "slug": "oscar-buckeye-state-insurance-corp",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ohb_tic_2027",
+   "claims_in_network": {
+    "n": 1418723,
+    "k": 266043,
+    "pct": 18.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 494207,
+    "k": 203264,
+    "pct": 41.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 15653,
+    "k": 5844,
+    "pct": 37.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 14234,
+    "k": 2372,
+    "pct": 16.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 789,
+    "k": 472,
+    "pct": 59.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 103,
+    "k": 31,
+    "pct": 30.1,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1276642,
+    "k": 337922,
+    "pct": 26.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Oscar Insurance Corporation of Ohio",
+   "insurer_id": "45845",
+   "slug": "oscar-insurance-corporation-of-ohio",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ohc_tic_2027",
+   "claims_in_network": {
+    "n": 525807,
+    "k": 75554,
+    "pct": 14.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 11851,
+    "k": 5713,
+    "pct": 48.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 5495,
+    "k": 2044,
+    "pct": 37.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 3736,
+    "k": 1071,
+    "pct": 28.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 503,
+    "k": 258,
+    "pct": 51.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 610423,
+    "k": 121739,
+    "pct": 19.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "Summa Insurance Company, Inc.",
+   "insurer_id": "52664",
+   "slug": "summa-insurance-company-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.summacare.com/pricing-transparency",
+   "claims_in_network": {
+    "n": 280927,
+    "k": 68759,
+    "pct": 24.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 19610,
+    "k": 12494,
+    "pct": 63.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 540,
+    "k": 66,
+    "pct": 12.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 162,
+    "k": 39,
+    "pct": 24.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 41,
+    "k": 22,
+    "pct": 53.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 197767,
+    "k": 51591,
+    "pct": 26.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "OH",
+   "state_name": "Ohio",
+   "state_slug": "ohio",
+   "insurer": "UnitedHealthcare of Ohio, Inc.",
+   "insurer_id": "33931",
+   "slug": "unitedhealthcare-of-ohio-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 777740,
+    "k": 185791,
+    "pct": 23.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 274848,
+    "k": 168299,
+    "pct": 61.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 7880,
+    "k": 2806,
+    "pct": 35.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 334,
+    "k": 149,
+    "pct": 44.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 139,
+    "k": 24,
+    "pct": 17.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 895840,
+    "k": 208089,
+    "pct": 23.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "OK",
+   "state_name": "Oklahoma",
+   "state_slug": "oklahoma",
+   "insurer": "Blue Cross Blue Shield of Oklahoma",
+   "insurer_id": "87571",
+   "slug": "blue-cross-blue-shield-of-oklahoma",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbsok.com/member/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 8322507,
+    "k": 1517965,
+    "pct": 18.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 247011,
+    "k": 99723,
+    "pct": 40.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 89560,
+    "k": 15509,
+    "pct": 17.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1991,
+    "k": 446,
+    "pct": 22.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1277,
+    "k": 451,
+    "pct": 35.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 16,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 8439891,
+    "k": 1385537,
+    "pct": 16.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "OK",
+   "state_name": "Oklahoma",
+   "state_slug": "oklahoma",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "62505",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/ok/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 3408448,
+    "k": 458772,
+    "pct": 13.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 919882,
+    "k": 96722,
+    "pct": 10.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 175698,
+    "k": 10434,
+    "pct": 5.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 832,
+    "k": 262,
+    "pct": 31.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 831,
+    "k": 262,
+    "pct": 31.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 18,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1824797,
+    "k": 438378,
+    "pct": 24.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "OK",
+   "state_name": "Oklahoma",
+   "state_slug": "oklahoma",
+   "insurer": "CommunityCare HMO Inc.",
+   "insurer_id": "98905",
+   "slug": "communitycare-hmo-inc",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ccok.com/Plans-and-Coverage/Group/Claims-Payment-Info-HMO.asp",
+   "claims_in_network": {
+    "n": 361548,
+    "k": 55848,
+    "pct": 15.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 19572,
+    "k": 5345,
+    "pct": 27.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 9223,
+    "k": 361,
+    "pct": 3.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 95,
+    "k": 30,
+    "pct": 31.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 210,
+    "k": 133,
+    "pct": 63.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 435151,
+    "k": 74500,
+    "pct": 17.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "OK",
+   "state_name": "Oklahoma",
+   "state_slug": "oklahoma",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "91908",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/ok_tic_2027",
+   "claims_in_network": {
+    "n": 115959,
+    "k": 18534,
+    "pct": 16.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 46463,
+    "k": 9127,
+    "pct": 19.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1970,
+    "k": 729,
+    "pct": 37.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 762,
+    "k": 207,
+    "pct": 27.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 85,
+    "k": 37,
+    "pct": 43.5,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 259248,
+    "k": 60135,
+    "pct": 23.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "OK",
+   "state_name": "Oklahoma",
+   "state_slug": "oklahoma",
+   "insurer": "UnitedHealthcare of Oklahoma, Inc.",
+   "insurer_id": "45480",
+   "slug": "unitedhealthcare-of-oklahoma-inc",
+   "exchange_type": "SBE-FP",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 256410,
+    "k": 65121,
+    "pct": 25.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 117764,
+    "k": 66834,
+    "pct": 56.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2913,
+    "k": 1074,
+    "pct": 36.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 69,
+    "k": 28,
+    "pct": 40.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 49,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 260548,
+    "k": 59525,
+    "pct": 22.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "Absolute Total Care, Inc",
+   "insurer_id": "79222",
+   "slug": "absolute-total-care-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/sc/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 8972863,
+    "k": 1027842,
+    "pct": 11.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 635510,
+    "k": 84269,
+    "pct": 13.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 346672,
+    "k": 22576,
+    "pct": 6.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1860,
+    "k": 1083,
+    "pct": 58.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1858,
+    "k": 1082,
+    "pct": 58.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 15,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 8043578,
+    "k": 1471467,
+    "pct": 18.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "Blue Cross and Blue Shield of South Carolina",
+   "insurer_id": "26065",
+   "slug": "blue-cross-and-blue-shield-of-south-carolina",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.southcarolinablues.com/links/transparency",
+   "claims_in_network": {
+    "n": 12784342,
+    "k": 2323759,
+    "pct": 18.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 399672,
+    "k": 144319,
+    "pct": 36.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 201181,
+    "k": 36015,
+    "pct": 17.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 3605,
+    "k": 1734,
+    "pct": 48.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 265,
+    "k": 137,
+    "pct": 51.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 246,
+    "k": 144,
+    "pct": 58.5,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 11796220,
+    "k": 1827005,
+    "pct": 15.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "InStil Health Insurance Company",
+   "insurer_id": "33863",
+   "slug": "instil-health-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.instilhealth.com/web/public/brands/ih/transparency/",
+   "claims_in_network": {
+    "n": 107654,
+    "k": 17786,
+    "pct": 16.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 5471,
+    "k": 3138,
+    "pct": 57.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1924,
+    "k": 535,
+    "pct": 27.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 61,
+    "k": 25,
+    "pct": 41.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "Oscar Health Plan, Inc.",
+   "insurer_id": "59798",
+   "slug": "oscar-health-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://hioscar.com/sc_tic_2027",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "Select Health of South Carolina",
+   "insurer_id": "73107",
+   "slug": "select-health-of-south-carolina",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.firstchoicenext.com/transparency-in-coverage-2027",
+   "claims_in_network": {
+    "n": 243311,
+    "k": 72807,
+    "pct": 29.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 29082,
+    "k": 14344,
+    "pct": 49.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4912,
+    "k": 1798,
+    "pct": 36.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 107,
+    "k": 47,
+    "pct": 43.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 78,
+    "k": 38,
+    "pct": 48.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 121039,
+    "k": 39520,
+    "pct": 32.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "SC",
+   "state_name": "South Carolina",
+   "state_slug": "south-carolina",
+   "insurer": "UnitedHealthcare of South Carolina, Inc.",
+   "insurer_id": "33764",
+   "slug": "unitedhealthcare-of-south-carolina-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 684686,
+    "k": 131081,
+    "pct": 19.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 252347,
+    "k": 136117,
+    "pct": 53.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 7433,
+    "k": 2513,
+    "pct": 33.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 158,
+    "k": 44,
+    "pct": 27.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 150,
+    "k": 17,
+    "pct": 11.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 438616,
+    "k": 88229,
+    "pct": 20.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "SD",
+   "state_name": "South Dakota",
+   "state_slug": "south-dakota",
+   "insurer": "Avera Health Plans, Inc.",
+   "insurer_id": "60536",
+   "slug": "avera-health-plans-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.averahealthplans.com/insurance/about/legal-privacy-notices/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 504170,
+    "k": 17773,
+    "pct": 3.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 5580,
+    "k": 4301,
+    "pct": 77.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 10949,
+    "k": 2252,
+    "pct": 20.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 72,
+    "k": 50,
+    "pct": 69.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 133,
+    "k": 102,
+    "pct": 76.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 436009,
+    "k": 11752,
+    "pct": 2.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "SD",
+   "state_name": "South Dakota",
+   "state_slug": "south-dakota",
+   "insurer": "Sanford Health Plan",
+   "insurer_id": "31195",
+   "slug": "sanford-health-plan",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.sanfordhealthplan.com/members/claims-payment-information",
+   "claims_in_network": {
+    "n": 728484,
+    "k": 18341,
+    "pct": 2.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 18531,
+    "k": 7392,
+    "pct": 39.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6760,
+    "k": 759,
+    "pct": 11.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 166,
+    "k": 119,
+    "pct": 71.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 261,
+    "k": 180,
+    "pct": 69.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 855229,
+    "k": 35230,
+    "pct": 4.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "SD",
+   "state_name": "South Dakota",
+   "state_slug": "south-dakota",
+   "insurer": "Wellmark of South Dakota",
+   "insurer_id": "50305",
+   "slug": "wellmark-of-south-dakota",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.wellmark.com/transparency",
+   "claims_in_network": {
+    "n": 382625,
+    "k": 59024,
+    "pct": 15.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 21879,
+    "k": 12426,
+    "pct": 56.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4914,
+    "k": 1219,
+    "pct": 24.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 34,
+    "k": 14,
+    "pct": 41.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 39,
+    "k": 18,
+    "pct": 46.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 425214,
+    "k": 65429,
+    "pct": 15.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "TN",
+   "state_name": "Tennessee",
+   "state_slug": "tennessee",
+   "insurer": "Alliant Health Plans, Inc.",
+   "insurer_id": "29854",
+   "slug": "alliant-health-plans-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://alliantplans.com/transparency-in-coverage-rule/",
+   "claims_in_network": {
+    "n": 16162,
+    "k": 973,
+    "pct": 6.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 2319,
+    "k": 2016,
+    "pct": 86.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 295,
+    "k": 38,
+    "pct": 12.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "TN",
+   "state_name": "Tennessee",
+   "state_slug": "tennessee",
+   "insurer": "BlueCross BlueShield of Tennessee",
+   "insurer_id": "14002",
+   "slug": "bluecross-blueshield-of-tennessee",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbst.com/transparency-in-coverage.com/",
+   "claims_in_network": {
+    "n": 7332457,
+    "k": 1719613,
+    "pct": 23.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1119298,
+    "k": 757693,
+    "pct": 67.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 57948,
+    "k": 6883,
+    "pct": 11.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 212,
+    "k": 84,
+    "pct": 39.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 397,
+    "k": 203,
+    "pct": 51.1,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 13,
+    "k": 0,
+    "pct": 0.0,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 6270421,
+    "k": 1323501,
+    "pct": 21.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "TN",
+   "state_name": "Tennessee",
+   "state_slug": "tennessee",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "70111",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/tn/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 9568351,
+    "k": 1099147,
+    "pct": 11.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 893270,
+    "k": 243248,
+    "pct": 27.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 391253,
+    "k": 23402,
+    "pct": 6.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 3320,
+    "k": 2285,
+    "pct": 68.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 3315,
+    "k": 2284,
+    "pct": 68.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 23,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 8726180,
+    "k": 1645943,
+    "pct": 18.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "TN",
+   "state_name": "Tennessee",
+   "state_slug": "tennessee",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "23552",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/tn_tic_2027",
+   "claims_in_network": {
+    "n": 2681148,
+    "k": 500557,
+    "pct": 18.7,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 433779,
+    "k": 176767,
+    "pct": 40.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 35673,
+    "k": 10051,
+    "pct": 28.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 26213,
+    "k": 6057,
+    "pct": 23.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1882,
+    "k": 879,
+    "pct": 46.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 30,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 798002,
+    "k": 187709,
+    "pct": 23.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "TN",
+   "state_name": "Tennessee",
+   "state_slug": "tennessee",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "69443",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 2608244,
+    "k": 576337,
+    "pct": 22.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 611669,
+    "k": 318010,
+    "pct": 52.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 26778,
+    "k": 7465,
+    "pct": 27.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 504,
+    "k": 196,
+    "pct": 38.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 368,
+    "k": 75,
+    "pct": 20.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2157936,
+    "k": 446509,
+    "pct": 20.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Antidote Health of TX",
+   "insurer_id": "11819",
+   "slug": "antidote-health-of-tx",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.antidotehealth.com/legal/transparency-in-coverage",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Blue Cross Blue Shield of Texas",
+   "insurer_id": "33602",
+   "slug": "blue-cross-blue-shield-of-texas",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbstx.com/member/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 66055381,
+    "k": 13945257,
+    "pct": 21.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3008674,
+    "k": 956352,
+    "pct": 31.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 454826,
+    "k": 97206,
+    "pct": 21.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 8791,
+    "k": 2521,
+    "pct": 28.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 10989,
+    "k": 2647,
+    "pct": 24.1,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 107,
+    "k": 35,
+    "pct": 32.7,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 58806743,
+    "k": 11028737,
+    "pct": 18.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "CHRISTUS Health Plan",
+   "insurer_id": "66252",
+   "slug": "christus-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.christushealthplan.org/member-resources/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 1882508,
+    "k": 208818,
+    "pct": 11.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 347672,
+    "k": 143673,
+    "pct": 41.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3522,
+    "k": 163,
+    "pct": 4.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 5136,
+    "k": 564,
+    "pct": 11.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1206500,
+    "k": 141176,
+    "pct": 11.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Celtic Insurance Company",
+   "insurer_id": "29418",
+   "slug": "celtic-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/tx/resources/handbooks-forms/transparency-notice-2027",
+   "claims_in_network": {
+    "n": 27614462,
+    "k": 2698996,
+    "pct": 9.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3157434,
+    "k": 433518,
+    "pct": 13.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 620084,
+    "k": 55408,
+    "pct": 8.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 16238521,
+    "k": 2652607,
+    "pct": 16.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Community First Insurance Plans",
+   "insurer_id": "63251",
+   "slug": "community-first-insurance-plans",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://exchange.communityfirsthealthplans.com/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 233662,
+    "k": 52198,
+    "pct": 22.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 18572,
+    "k": 12588,
+    "pct": 67.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2726,
+    "k": 76,
+    "pct": 2.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 437,
+    "k": 125,
+    "pct": 28.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 23,
+    "k": 15,
+    "pct": 65.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 112382,
+    "k": 34419,
+    "pct": 30.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Community Health Choice Texas, Inc.",
+   "insurer_id": "11718",
+   "slug": "community-health-choice-texas-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.communityhealthchoice.org/health-insurance-marketplace/transparency-in-coverage-2026/",
+   "claims_in_network": {
+    "n": 41325,
+    "k": 8668,
+    "pct": 21.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 16896,
+    "k": 11395,
+    "pct": 67.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 215,
+    "k": 85,
+    "pct": 39.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Community Health Choice, Inc.",
+   "insurer_id": "27248",
+   "slug": "community-health-choice-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.communityhealthchoice.org/health-insurance-marketplace/transparency-in-coverage-2026/",
+   "claims_in_network": {
+    "n": 7548024,
+    "k": 1462532,
+    "pct": 19.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 793282,
+    "k": 333286,
+    "pct": 42.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 23490,
+    "k": 4567,
+    "pct": 19.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 711,
+    "k": 314,
+    "pct": 44.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 6776421,
+    "k": 1449319,
+    "pct": 21.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Harbor Health Insurance Company",
+   "insurer_id": "37758",
+   "slug": "harbor-health-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://assets.harborhealth.com/cms/Transparency_in_Coverage_Claims_Payment_Policies_and_Other_Information_62ae6d4e04.pdf?",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Imperial Insurance Companies, Inc.",
+   "insurer_id": "34826",
+   "slug": "imperial-insurance-companies-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://exchange.imperialhealthplan.com/texas/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 26387,
+    "k": 9707,
+    "pct": 36.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 9524,
+    "k": 4069,
+    "pct": 42.7,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3774,
+    "k": 22,
+    "pct": 0.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 22,
+    "k": 17,
+    "pct": 77.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 2530,
+    "k": 902,
+    "pct": 35.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Molina Healthcare of Texas, Inc.",
+   "insurer_id": "45786",
+   "slug": "molina-healthcare-of-texas-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.molinamarketplace.com/marketplace/tx/en-us/FAQ.aspx",
+   "claims_in_network": {
+    "n": 1641248,
+    "k": 391061,
+    "pct": 23.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 175127,
+    "k": 69656,
+    "pct": 39.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 42639,
+    "k": 7362,
+    "pct": 17.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 18959,
+    "k": 2997,
+    "pct": 15.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 1920,
+    "k": 990,
+    "pct": 51.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 987573,
+    "k": 237126,
+    "pct": 24.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Oscar Insurance Company",
+   "insurer_id": "20069",
+   "slug": "oscar-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://hioscar.com/tx_tic_2027",
+   "claims_in_network": {
+    "n": 5419297,
+    "k": 829696,
+    "pct": 15.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 1217958,
+    "k": 409208,
+    "pct": 33.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 78729,
+    "k": 29022,
+    "pct": 36.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 53955,
+    "k": 8608,
+    "pct": 16.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 5047,
+    "k": 2654,
+    "pct": 52.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 51,
+    "k": 15,
+    "pct": 29.4,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 3001076,
+    "k": 764285,
+    "pct": 25.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Sendero Health Plans, Inc.",
+   "insurer_id": "71837",
+   "slug": "sendero-health-plans-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://senderohealth.com/transparency_in_coverage",
+   "claims_in_network": {
+    "n": 1497780,
+    "k": 336574,
+    "pct": 22.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 98938,
+    "k": 66546,
+    "pct": 67.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 12842,
+    "k": 12670,
+    "pct": 98.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 24,
+    "k": 12,
+    "pct": 50.0,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 28,
+    "k": 14,
+    "pct": 50.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 471218,
+    "k": 101311,
+    "pct": 21.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Superior Health Plan",
+   "insurer_id": "87226",
+   "slug": "superior-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.ambetterhealth.com/en/tx/resources/handbooks-forms/2027-transparency-notice-tx-hmo",
+   "claims_in_network": {
+    "n": 12404344,
+    "k": 1556425,
+    "pct": 12.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 5926630,
+    "k": 799421,
+    "pct": 13.5,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 419928,
+    "k": 25823,
+    "pct": 6.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 5807390,
+    "k": 1287305,
+    "pct": 22.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "UnitedHealthcare Benefits of Texas, Inc.",
+   "insurer_id": "70754",
+   "slug": "unitedhealthcare-benefits-of-texas-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "UnitedHealthcare of Texas, Inc.",
+   "insurer_id": "40220",
+   "slug": "unitedhealthcare-of-texas-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 14133350,
+    "k": 2570982,
+    "pct": 18.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 4228347,
+    "k": 1994970,
+    "pct": 47.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 102073,
+    "k": 32682,
+    "pct": 32.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 2386,
+    "k": 1321,
+    "pct": 55.4,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 5121,
+    "k": 1733,
+    "pct": 33.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 14698969,
+    "k": 2550560,
+    "pct": 17.4,
+    "mark": null
+   }
+  },
+  {
+   "state": "TX",
+   "state_name": "Texas",
+   "state_slug": "texas",
+   "insurer": "Wellpoint Insurance Company",
+   "insurer_id": "47501",
+   "slug": "wellpoint-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.wellpoint.com/notices/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 956506,
+    "k": 113708,
+    "pct": 11.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 164735,
+    "k": 54203,
+    "pct": 32.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 20156,
+    "k": 5259,
+    "pct": 26.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 301,
+    "k": 63,
+    "pct": 20.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 247,
+    "k": 54,
+    "pct": 21.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  },
+  {
+   "state": "UT",
+   "state_name": "Utah",
+   "state_slug": "utah",
+   "insurer": "BridgeSpan Health Company",
+   "insurer_id": "34541",
+   "slug": "bridgespan-health-company",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bridgespanhealth.com/member/terms-of-use/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 5902,
+    "k": 1182,
+    "pct": 20.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 492,
+    "k": 374,
+    "pct": 76.0,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 29,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 7900,
+    "k": 1310,
+    "pct": 16.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "UT",
+   "state_name": "Utah",
+   "state_slug": "utah",
+   "insurer": "Imperial Health Plan of the Southwest, Inc.",
+   "insurer_id": "98113",
+   "slug": "imperial-health-plan-of-the-southwest-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://exchange.imperialhealthplan.com/utah/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 840,
+    "k": 242,
+    "pct": 28.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 587,
+    "k": 216,
+    "pct": 36.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 60,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 261,
+    "k": 87,
+    "pct": 33.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "UT",
+   "state_name": "Utah",
+   "state_slug": "utah",
+   "insurer": "Regence BlueCross BlueShield of Utah",
+   "insurer_id": "22013",
+   "slug": "regence-bluecross-blueshield-of-utah",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.regence.com/member/terms-of-use/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 389631,
+    "k": 52771,
+    "pct": 13.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 29885,
+    "k": 22775,
+    "pct": 76.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 2344,
+    "k": 239,
+    "pct": 10.2,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 376,
+    "k": 25,
+    "pct": 6.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 16,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 395068,
+    "k": 58383,
+    "pct": 14.8,
+    "mark": null
+   }
+  },
+  {
+   "state": "UT",
+   "state_name": "Utah",
+   "state_slug": "utah",
+   "insurer": "SelectHealth, Inc.",
+   "insurer_id": "68781",
+   "slug": "selecthealth-inc",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://selecthealth.org/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 10065963,
+    "k": 1741801,
+    "pct": 17.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 296052,
+    "k": 149357,
+    "pct": 50.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 61955,
+    "k": 37339,
+    "pct": 60.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 1431,
+    "k": 526,
+    "pct": 36.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 2310,
+    "k": 514,
+    "pct": 22.3,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 3028,
+    "k": 476,
+    "pct": 15.7,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 8402145,
+    "k": 1571221,
+    "pct": 18.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "UT",
+   "state_name": "Utah",
+   "state_slug": "utah",
+   "insurer": "University of Utah Health Insurance Plans",
+   "insurer_id": "42261",
+   "slug": "university-of-utah-health-insurance-plans",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://uhealthplan.utah.edu/individual/claims",
+   "claims_in_network": {
+    "n": 911638,
+    "k": 171878,
+    "pct": 18.9,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 17825,
+    "k": 11779,
+    "pct": 66.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 9664,
+    "k": 2153,
+    "pct": 22.3,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 532,
+    "k": 144,
+    "pct": 27.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 188,
+    "k": 54,
+    "pct": 28.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 644314,
+    "k": 122297,
+    "pct": 19.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "WV",
+   "state_name": "West Virginia",
+   "state_slug": "west-virginia",
+   "insurer": "Highmark Blue Cross Blue Shield West Virginia",
+   "insurer_id": "31274",
+   "slug": "highmark-blue-cross-blue-shield-west-virginia",
+   "exchange_type": "SPE",
+   "new_to_exchange": false,
+   "claims_policy_url": "http://www.highmark.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 3515717,
+    "k": 707610,
+    "pct": 20.1,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 53909,
+    "k": 21374,
+    "pct": 39.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 18329,
+    "k": 1216,
+    "pct": 6.6,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 93,
+    "k": 20,
+    "pct": 21.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 39,
+    "k": 16,
+    "pct": 41.0,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2341171,
+    "k": 471125,
+    "pct": 20.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "WV",
+   "state_name": "West Virginia",
+   "state_slug": "west-virginia",
+   "insurer": "Peak Health Insurance Corporation",
+   "insurer_id": "30882",
+   "slug": "peak-health-insurance-corporation",
+   "exchange_type": "SPE",
+   "new_to_exchange": true,
+   "claims_policy_url": "https://peakhealth.org/transparency/",
+   "claims_in_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_out_of_network": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   },
+   "claims_in_network_2024": null
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Aspirus Health Plan, Inc.",
+   "insurer_id": "86584",
+   "slug": "aspirus-health-plan-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.aspirushealthplan.com/insurance/transparencyInCoverage/",
+   "claims_in_network": {
+    "n": 375946,
+    "k": 57728,
+    "pct": 15.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 6746,
+    "k": 3599,
+    "pct": 53.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 382692,
+    "k": 61327,
+    "pct": 16.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 254,
+    "k": 150,
+    "pct": 59.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 19,
+    "k": 12,
+    "pct": 63.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 398306,
+    "k": 47925,
+    "pct": 12.0,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Common Ground Healthcare Cooperative",
+   "insurer_id": "87416",
+   "slug": "common-ground-healthcare-cooperative",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.caresource.com/wi/plans/marketplace/plan-documents/general-plan-information/",
+   "claims_in_network": {
+    "n": 2611751,
+    "k": 639167,
+    "pct": 24.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 124780,
+    "k": 78467,
+    "pct": 62.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 181577,
+    "k": 32171,
+    "pct": 17.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 137,
+    "k": 50,
+    "pct": 36.5,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 134,
+    "k": 93,
+    "pct": 69.4,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1504864,
+    "k": 143772,
+    "pct": 9.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Compcare Health Services Insurance Corporation",
+   "insurer_id": "79475",
+   "slug": "compcare-health-services-insurance-corporation",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.anthem.com/microsites/transparency-in-coverage.html",
+   "claims_in_network": {
+    "n": 2881694,
+    "k": 202277,
+    "pct": 7.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 373548,
+    "k": 187961,
+    "pct": 50.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 75311,
+    "k": 10527,
+    "pct": 14.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 399,
+    "k": 198,
+    "pct": 49.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 664,
+    "k": 284,
+    "pct": 42.8,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 2462417,
+    "k": 213637,
+    "pct": 8.7,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Dean Health Plan",
+   "insurer_id": "38345",
+   "slug": "dean-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.deancare.com/Legal/business-transparency",
+   "claims_in_network": {
+    "n": 1060134,
+    "k": 150341,
+    "pct": 14.2,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 10960,
+    "k": 9931,
+    "pct": 90.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 10327,
+    "k": 2072,
+    "pct": 20.1,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 285,
+    "k": 127,
+    "pct": 44.6,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 11,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1104307,
+    "k": 160914,
+    "pct": 14.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Group Health Cooperative of South Central Wisconsin",
+   "insurer_id": "94529",
+   "slug": "group-health-cooperative-of-south-central-wisconsin",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://ghcscw.com/member-transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 192406,
+    "k": 16891,
+    "pct": 8.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 4036,
+    "k": 1300,
+    "pct": 32.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 4776,
+    "k": 431,
+    "pct": 9.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 12,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 207372,
+    "k": 18470,
+    "pct": 8.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "HealthPartners Insurance Company",
+   "insurer_id": "20173",
+   "slug": "healthpartners-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.healthpartners.com/ifclaims",
+   "claims_in_network": {
+    "n": 581533,
+    "k": 37577,
+    "pct": 6.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 11871,
+    "k": 1910,
+    "pct": 16.1,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1228,
+    "k": 440,
+    "pct": 35.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": 45,
+    "k": 21,
+    "pct": 46.7,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 466789,
+    "k": 30260,
+    "pct": 6.5,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Medica Community Health Plan",
+   "insurer_id": "57845",
+   "slug": "medica-community-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.medica.com/transparency-in-coverage",
+   "claims_in_network": {
+    "n": 607414,
+    "k": 101801,
+    "pct": 16.8,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 20955,
+    "k": 15852,
+    "pct": 75.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 3024,
+    "k": 345,
+    "pct": 11.4,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 196,
+    "k": 84,
+    "pct": 42.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 12,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 510731,
+    "k": 87505,
+    "pct": 17.1,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "MercyCare HMO, Inc.",
+   "insurer_id": "58326",
+   "slug": "mercycare-hmo-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.mercycarehealthplans.com/transparency-in-coverage/",
+   "claims_in_network": {
+    "n": 189559,
+    "k": 20778,
+    "pct": 11.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3271,
+    "k": 1272,
+    "pct": 38.9,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1146,
+    "k": 88,
+    "pct": 7.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "internal_appeals_prior_auth": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 208646,
+    "k": 19105,
+    "pct": 9.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Network Health Plan",
+   "insurer_id": "81413",
+   "slug": "network-health-plan",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://networkhealth.com/individual/transparency",
+   "claims_in_network": {
+    "n": 689952,
+    "k": 117572,
+    "pct": 17.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 25206,
+    "k": 18249,
+    "pct": 72.4,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 11043,
+    "k": 1534,
+    "pct": 13.9,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 57,
+    "k": 33,
+    "pct": 57.9,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 76,
+    "k": 45,
+    "pct": 59.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 298634,
+    "k": 48655,
+    "pct": 16.3,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Quartz Health Benefit Plans Corporation",
+   "insurer_id": "37833",
+   "slug": "quartz-health-benefit-plans-corporation",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "http://quartzbenefits.com/transparency",
+   "claims_in_network": {
+    "n": 740493,
+    "k": 81636,
+    "pct": 11.0,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 11493,
+    "k": 2551,
+    "pct": 22.2,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 6106,
+    "k": 1937,
+    "pct": 31.7,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 302,
+    "k": 197,
+    "pct": 65.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 243,
+    "k": 165,
+    "pct": 67.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 696511,
+    "k": 57350,
+    "pct": 8.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "Security Health Plan of Wisconsin, Inc.",
+   "insurer_id": "38166",
+   "slug": "security-health-plan-of-wisconsin-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.securityhealth.org/find-a-plan/member-responsibilities",
+   "claims_in_network": {
+    "n": 1292753,
+    "k": 287953,
+    "pct": 22.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 67610,
+    "k": 29615,
+    "pct": 43.8,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 28362,
+    "k": 2261,
+    "pct": 8.0,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 104,
+    "k": 58,
+    "pct": 55.8,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 148,
+    "k": 101,
+    "pct": 68.2,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 1306739,
+    "k": 247191,
+    "pct": 18.9,
+    "mark": null
+   }
+  },
+  {
+   "state": "WI",
+   "state_name": "Wisconsin",
+   "state_slug": "wisconsin",
+   "insurer": "UnitedHealthcare of Wisconsin, Inc.",
+   "insurer_id": "80180",
+   "slug": "unitedhealthcare-of-wisconsin-inc",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 1102539,
+    "k": 179349,
+    "pct": 16.3,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 146834,
+    "k": 94923,
+    "pct": 64.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 10014,
+    "k": 3350,
+    "pct": 33.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 470,
+    "k": 193,
+    "pct": 41.1,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 255,
+    "k": 33,
+    "pct": 12.9,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": 659260,
+    "k": 113541,
+    "pct": 17.2,
+    "mark": null
+   }
+  },
+  {
+   "state": "WY",
+   "state_name": "Wyoming",
+   "state_slug": "wyoming",
+   "insurer": "Blue Cross Blue Shield of Wyoming",
+   "insurer_id": "11269",
+   "slug": "blue-cross-blue-shield-of-wyoming",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.bcbswy.com/information/transparency/",
+   "claims_in_network": {
+    "n": 1633878,
+    "k": 333000,
+    "pct": 20.4,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 3517,
+    "k": 969,
+    "pct": 27.6,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 13249,
+    "k": 109,
+    "pct": 0.8,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 415,
+    "k": 84,
+    "pct": 20.2,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 79,
+    "k": 21,
+    "pct": 26.6,
+    "mark": null
+   },
+   "external_appeals_claims": {
+    "n": null,
+    "k": 0,
+    "pct": null,
+    "mark": "**"
+   },
+   "claims_in_network_2024": {
+    "n": 1305051,
+    "k": 229909,
+    "pct": 17.6,
+    "mark": null
+   }
+  },
+  {
+   "state": "WY",
+   "state_name": "Wyoming",
+   "state_slug": "wyoming",
+   "insurer": "UnitedHealthcare Insurance Company",
+   "insurer_id": "49714",
+   "slug": "unitedhealthcare-insurance-company",
+   "exchange_type": "FFE",
+   "new_to_exchange": false,
+   "claims_policy_url": "https://www.uhc.com/transparency",
+   "claims_in_network": {
+    "n": 113714,
+    "k": 19901,
+    "pct": 17.5,
+    "mark": null
+   },
+   "claims_out_of_network": {
+    "n": 11707,
+    "k": 8226,
+    "pct": 70.3,
+    "mark": null
+   },
+   "prior_auth": {
+    "n": 1620,
+    "k": 688,
+    "pct": 42.5,
+    "mark": null
+   },
+   "internal_appeals_claims": {
+    "n": 70,
+    "k": 25,
+    "pct": 35.7,
+    "mark": null
+   },
+   "internal_appeals_prior_auth": {
+    "n": 67,
+    "k": null,
+    "pct": null,
+    "mark": "**"
+   },
+   "external_appeals_claims": {
+    "n": 0,
+    "k": 0,
+    "pct": null,
+    "mark": null
+   },
+   "claims_in_network_2024": {
+    "n": null,
+    "k": null,
+    "pct": null,
+    "mark": "N/A"
+   }
+  }
+ ]
+}

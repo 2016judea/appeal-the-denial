@@ -98,3 +98,36 @@ See the bottom of this file once checked.
 | Packet | `lib/packet.js` | `tracking` ships as a calendar file the person keeps, not server reminders, so no health data is stored. `escalation` links to the NAIC directory of state regulators rather than carrying 50 addresses |
 
 Every field in the model is fillable. Nothing was dropped.
+
+## Insurer denial rates (added 2026-11-19, written before opening the file)
+
+The question a person asks an assistant: *"How often does my insurer deny claims, and do
+appeals against it work?"* Ideal model, from that need alone:
+
+### InsurerYear (one insurer, one state, one market, one year)
+| field | question it answers |
+|---|---|
+| `insurer`, `insurer_id`, `state`, `market` (employer, Marketplace, Medicare Advantage, Medicaid) | is this my insurer, for my kind of plan? |
+| `year` | how fresh is this? |
+| `claims_received`, `claims_denied` → `claims_denied_pct` | how often do they say no to a bill? |
+| `prior_auth_received`, `prior_auth_denied` → `prior_auth_denied_pct` | how often do they say no before care? |
+| `appeals_filed`, `appeals_overturned` → `appeals_won_pct` | if I appeal, how often does it work? |
+| `external_reviews_filed`, `external_overturned` | how often does an outside reviewer side with the patient? |
+| `denials_by_reason` | is my denial reason a common one for them? |
+| `prior_year_claims_denied_pct` | is it getting worse? |
+
+Every percentage is computed in code from the two counts beside it; no model produces one.
+
+### Reality check (2026-11-19)
+| market | source | fills |
+|---|---|---|
+| Marketplace (HealthCare.gov states) | CMS Transparency in Coverage PUF, PY2027 file posted 2026-10-30, 2025 data, issuer x state | every field above. Prior-auth counts are new in this file. Reasons are plan-level only |
+| Medicare Advantage | CMS Part C reporting data (organization determinations), contract level | not loaded this pass (backlog) |
+| Employer (ERISA) | none: employer plans report no denial counts publicly | nothing |
+| Medicaid managed care | a few states publish; no national file | nothing |
+| State-run exchanges (CA, NY, MN, …) | not in the CMS file | nothing |
+
+Call: **reframe, not abandon.** The only public per-insurer denial counts in the US are the
+Marketplace ones, so the page is titled and scoped "Marketplace plans on HealthCare.gov, 29
+states", says so above the table, and never implies the numbers describe the same insurer's
+employer or Medicare business.

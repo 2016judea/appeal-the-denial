@@ -7,22 +7,40 @@
 <link rel="stylesheet" href="/style.css">
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script><script defer src="/_vercel/insights/script.js"></script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/icon.png" type="image/png"><link rel="apple-touch-icon" href="/icon.png">
+<!-- bm-posthog:begin v2-health — shared across every Vercel prototype; source ~/.claude/skills/site-analytics/posthog_snippet.html. ?me=1 opts this browser out on this site (?me=0 undoes); ?me=1&next=host1,host2 walks the opt-out across sites; headless (navigator.webdriver) never loads it. HEALTH VARIANT (appeal-the-denial): people paste insurance letters on these pages, so autocapture, rage/dead clicks, heatmaps, surveys and session replay are OFF, all text and attributes are masked, and only named events with no letter content are sent. Do not replace this block with the plain shared one: tests/pages.test.js fails if these options go missing. -->
+<script>
+(function(w,d){var S="appeal-the-denial",K="bm_me",me=false,u,p,n;
+try{u=new URLSearchParams(location.search);p=u.get("me");n=u.get("next");}catch(e){}
+try{if(p==="1"){localStorage.setItem(K,"1");}else if(p==="0"){localStorage.removeItem(K);}}catch(e){}
+if(p==="1"){d.cookie=K+"=1; path=/; max-age=63072000; SameSite=Lax";}else if(p==="0"){d.cookie=K+"=; path=/; max-age=0; SameSite=Lax";}
+try{me=localStorage.getItem(K)==="1";}catch(e){}
+if(!me&&/(?:^|; )bm_me=1/.test(d.cookie))me=true;
+if(p==="1"&&n){var h=n.split(","),f=h.shift();if(/^[a-z0-9.-]+$/.test(f)&&(f.slice(-11)===".vercel.app"||f==="brickandmortar.dev"||f==="readglean.com")){location.replace("https://"+f+"/?me=1"+(h.length?"&next="+h.join(","):""));}}
+if(navigator.webdriver===true)return;
+!function(t,e){var o,n,p,r;e.__SV||(w.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister identify setPersonProperties reset get_distinct_id get_session_id alias set_config startSessionRecording stopSessionRecording opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing captureException getFeatureFlag isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(d,w.posthog||[]);
+posthog.init("phc_yFgRGppL6H7DvhgZTQKbHdrY5oqnpLT482rrNYtLqnAx",{api_host:"https://us.i.posthog.com",person_profiles:"identified_only",persistence:"localStorage+cookie",opt_out_capturing_by_default:me,autocapture:false,rageclick:false,capture_dead_clicks:false,capture_heatmaps:false,disable_surveys:true,disable_session_recording:true,mask_all_text:true,mask_all_element_attributes:true});
+if(me){posthog.opt_out_capturing();}else{if(p==="0")posthog.opt_in_capturing();var src=null;try{src=u.get("src");}catch(e){}posthog.register({site:S,entry:src||"direct"});if(src){posthog.register_once({first_src:src});}}
+})(window,document);
+</script>
+<!-- bm-posthog:end -->
 </head>
 <body>
 <main class="wrap">
   <h1>Privacy</h1>
-  <p class="lede">Last updated November 3, 2026.</p>
+  <p class="lede">Last updated November 19, 2026.</p>
 
   <div class="card"><h2>Your letter is not stored</h2>
   <p>On this website the free answer is worked out in your browser. Your letter is not sent to us.</p>
   <p>When you open a paid packet, your letter is sent once to build it. It is used for that one request and not saved, logged or shared. Until then it sits only in your browser tab's session storage, which clears when you close the tab.</p>
-  <p>Inside ChatGPT or Claude, the app gets the letter text the assistant sends it, builds the answer and keeps nothing. ChatGPT and Claude have their own privacy policies for your conversation.</p></div>
+  <p>Inside ChatGPT or Claude, the app gets the letter text the assistant sends it, builds the answer and keeps nothing. ChatGPT and Claude have their own privacy policies for your conversation.</p>
+  <p>The answer in the chat ends with a link that opens your deadline, your letter and a calendar file on this website. Your letter's details travel in that link after the "#". Browsers never send that part to any server, ours included. The page reads it on your device and removes it from the address bar before any analytics loads.</p></div>
 
   <div class="card"><h2>Deadline tracking</h2>
   <p>Reminders are a calendar file you add to your own calendar. We don't keep a list of your deadlines.</p></div>
 
   <div class="card"><h2>What we do collect</h2>
-  <p><b>Visit counts.</b> Vercel Web Analytics counts page views without cookies. We also count a few button presses (reading a letter, copying it, checkout), never their contents.</p>
+  <p><b>Visit counts.</b> Vercel Web Analytics counts page views without cookies. PostHog counts visits and a few named button presses (reading a letter, copying it, adding the deadline to a calendar, checkout), with the kind of plan and the kind of denial reason (for example "employer plan", "medical necessity"). Never the letter, a name, an ID number, a date, the insurer or the care that was denied. Click recording and session recording are off on every page.</p>
+  <p><b>In ChatGPT or Claude.</b> Each use of the app records one anonymous event: which tool, whether it worked, how long it took, which app called it, and the same plan type and reason kind. Nothing from the letter.</p>
   <p><b>Payments.</b> Stripe handles checkout and keeps your name, email and card details under its own policy. We see that a payment was made, its amount and your email.</p></div>
 
   <div class="card"><h2>Health information</h2>

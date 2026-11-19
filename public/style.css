@@ -48,3 +48,18 @@ pre.letter { white-space: pre-wrap; font: 14px/1.5 var(--mono); background: var(
 .foot a { color: var(--soft); }
 .priv { font-size: 15px; color: var(--ok); margin: 8px 0 0; }
 @media (max-width: 520px) { h1 { font-size: 29px; } .lede { font-size: 16px; margin-bottom: 12px; } textarea { min-height: 130px; } .deadline { margin-top: 4px; } .chip { padding: 6px 12px; min-height: 36px; font-size: 14px; } .fix { grid-template-columns: 1fr; } dl.facts { grid-template-columns: 1fr; gap: 0 0; } dl.facts dd { margin-bottom: 8px; } }
+.tablewrap { overflow-x: auto; margin: 10px 0 4px; }
+table.rates { border-collapse: collapse; width: 100%; font-size: 15px; font-variant-numeric: tabular-nums; }
+table.rates th, table.rates td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.rates td { text-align: right; white-space: nowrap; }
+table.rates thead th { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--soft); font-weight: 600; }
+table.rates thead th:not(:first-child) { text-align: right; }
+table.rates tbody th { font-weight: 500; }
+table.rates a { color: var(--ink); }
+ul.states { list-style: none; padding: 0; margin: 8px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; }
+ul.states a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; color: var(--ink); text-decoration: none; min-height: 48px; }
+ul.states small { display: block; color: var(--soft); font-size: 14px; }
+ul.facts { padding-left: 18px; }
+ul.facts li { margin: 8px 0; }
+.method p { font-size: 15px; }
+@media (max-width: 520px) { table.rates { font-size: 14px; } table.rates th, table.rates td { padding: 8px 5px; } }
