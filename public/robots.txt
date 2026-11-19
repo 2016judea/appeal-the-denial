@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /demo/
+
+Sitemap: https://appeal-the-denial.vercel.app/sitemap.xml
