@@ -72,7 +72,9 @@ import { analyze } from "/lib/engine.js";
 import { PLAN_TYPES, STAGES } from "/lib/rules.js";
 import { pretty } from "/lib/dates.js";
 
-const PAY_URL = "https://buy.stripe.com/4gM5kC9hcaOlfwGak10Jq3K";
+// /api/buy opens a Checkout that shows Appeal the Denial (the payment link could only show the
+// Brick & Mortar account). It falls back to that link if Stripe refuses a session.
+const PAY_URL = "/api/buy";
 // Named events only, never the letter, a name, an ID, a date, the insurer or the service.
 const track = (name, props = {}) => { try { window.va && window.va("event", { name }); } catch {} try { window.posthog && window.posthog.capture && window.posthog.capture(name, props); } catch {} };
 let lastRead = null;

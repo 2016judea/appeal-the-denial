@@ -11,7 +11,9 @@ async function paid(sessionId) {
   });
   if (!r.ok) return false;
   const s = await r.json();
-  return s.payment_status === "paid" && (!process.env.PAYMENT_LINK_ID || s.payment_link === process.env.PAYMENT_LINK_ID);
+  // Ours = the payment link, or a session from api/buy.js (metadata only our secret key can set).
+  const ours = !process.env.PAYMENT_LINK_ID || s.payment_link === process.env.PAYMENT_LINK_ID || s.metadata?.product === "appeal-the-denial";
+  return s.payment_status === "paid" && ours;
 }
 
 export default async function handler(req, res) {

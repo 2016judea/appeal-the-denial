@@ -35,3 +35,13 @@ test("paid session builds every part of the packet", async () => {
   assert.ok(p.escalation.letters.external_review_request);
   assert.match(p.escalation.steps.join(" "), /askebsa\.dol\.gov/); // self-funded -> DOL, not the state
 });
+
+test("a paid session from api/buy.js (no payment link, our metadata) builds the packet", async () => {
+  const r = await run({ session_id: "cs_live_abc", letter_text: letter }, { payment_status: "paid", payment_link: null, metadata: { product: "appeal-the-denial" } });
+  assert.equal(r.code, 200);
+});
+
+test("a paid session for another product on the account gets 402", async () => {
+  const r = await run({ session_id: "cs_live_abc", letter_text: letter }, { payment_status: "paid", payment_link: null, metadata: { product: "heistclips" } });
+  assert.equal(r.code, 402);
+});
