@@ -166,3 +166,12 @@ unaffected.
 
     Best,
     Aidan
+
+## Appeal sent 2026-11-19
+Aidan chose option 2. Sent from aidanjude2016@gmail.com as a reply to the 11/17 rejection
+(Gmail thread 1a1eb086f39f34da), to openai-review@openai.com, in English. Sent the draft above
+**without its last paragraph**: no deadlines-only build is offered, because he hasn't committed to
+shipping one. Watch the same Gmail thread (personal inbox, may come back in German).
+
+Same day, Claude directory (read off his screenshot of claude.ai/directory/manage): Appeal the
+Denial is **Published** there, updated 2026-11-17.
